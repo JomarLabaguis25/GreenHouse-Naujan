@@ -36,7 +36,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
         <a href="index" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0">Naujan Mini GreenHouse</h1>
+            <h1 class="m-0">Greenhouse Naujan</h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -161,7 +161,7 @@
                     <h1 class="display-1 text-primary mb-0">25</h1>
                     <p class="text-primary mb-4">Year of Experience</p>
                     <h1 class="display-5 mb-4">We Make Our GreenHouse Like a Pro Producer</h1>
-                    <p class="mb-4">"We transform our greenhouse into a professional-grade producer by leveraging cutting-edge technology and sustainable practices to optimize plant growth, enhance productivity, and ensure high-quality yields."</p>
+                    <p class="mb-4" style="text-align: justify;">We transform our greenhouse into a professional-grade producer by leveraging cutting-edge technology and sustainable practices to optimize plant growth, enhance productivity, and ensure high-quality yields.</p>
                     <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
                 </div>
                 <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
@@ -170,14 +170,14 @@
                             <div class="border-start ps-4">
                                 <i class="fa fa-award fa-3x text-primary mb-3"></i>
                                 <h4 class="mb-3"></h4>
-                                <span></span>
+                                <span style="text-align: justify; display: block;">Our award-winning team has been recognized for its excellence and commitment to delivering outstanding results.</span>
                             </div>
                         </div>
                         <div class="col-12 col-sm-6 col-lg-12">
                             <div class="border-start ps-4">
                                 <i class="fa fa-users fa-3x text-primary mb-3"></i>
                                 <h4 class="mb-3"></h4>
-                                <span></span>
+                                <span style="text-align: justify; display: block;">With a dedicated team passionate about their work, we ensure consistent quality and exceptional service in every project.</span>
                             </div>
                         </div>
                     </div>
