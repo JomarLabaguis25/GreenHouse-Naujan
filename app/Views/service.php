@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gardener - Gardening Website Template</title>
+    <title>Greenhouse Naujan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -80,15 +80,6 @@
                 <a href="index" class="nav-item nav-link">Home</a>
                 <a href="about" class="nav-item nav-link">About</a>
                 <a href="service" class="nav-item nav-link active">Services</a>
-                <a href="project" class="nav-item nav-link">Projects</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature" class="dropdown-item">Features</a>
-                        <a href="team" class="dropdown-item">Our Team</a>
-                        <a href="testimonial" class="dropdown-item">Testimonial</a>
-                    </div>
-                </div>
                 </div>
             <a href="login" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
         </div>

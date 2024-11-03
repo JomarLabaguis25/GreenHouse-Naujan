@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Gardener - Gardening Website Template</title>
+    <title>Greenhouse Naujan</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -80,15 +80,6 @@
                 <a href="index" class="nav-item nav-link">Home</a>
                 <a href="about" class="nav-item nav-link active">About</a>
                 <a href="service" class="nav-item nav-link">Services</a>
-                <a href="project" class="nav-item nav-link">Projects</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu bg-light m-0">
-                        <a href="feature" class="dropdown-item">Features</a>
-                        <a href="team" class="dropdown-item">Our Team</a>
-                        <a href="testimonial" class="dropdown-item">Testimonial</a>
-                    </div>
-                </div>
                 </div>
             <a href="login" class="btn btn-primary py-4 px-lg-4 rounded-0 d-none d-lg-block">Get Started<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -123,7 +114,7 @@
                     <h1 class="display-1 text-primary mb-0">25</h1>
                     <p class="text-primary mb-4">Year of Experience</p>
                     <h1 class="display-5 mb-4">We Make Your Home Like A Garden</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p class="mb-4">"We transform our greenhouse into a professional-grade producer by leveraging cutting-edge technology and sustainable practices to optimize plant growth, enhance productivity, and ensure high-quality yields."</p>
                     <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
                 </div>
                 <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">

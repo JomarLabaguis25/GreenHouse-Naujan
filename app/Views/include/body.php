@@ -113,7 +113,7 @@
                             </div>
                             <div class="ps-3">
                                 <h4>Seedlings</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                <span>Our office offers variety of seeds</span>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                             </div>
                             <div class="ps-3">
                                 <h4>Variety of Plants</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                <span>Our Mini GreenHouse offers variety of plants</span>
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@
                             </div>
                             <div class="ps-3">
                                 <h4>Greeny Vegetables</h4>
-                                <span>Clita erat ipsum lorem sit sed stet duo justo</span>
+                                <span>Our office offers variety of fresh vegetables from the Greenhouse</span>
                             </div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                     <h1 class="display-1 text-primary mb-0">25</h1>
                     <p class="text-primary mb-4">Year of Experience</p>
                     <h1 class="display-5 mb-4">We Make Our GreenHouse Like a Pro Producer</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <p class="mb-4">"We transform our greenhouse into a professional-grade producer by leveraging cutting-edge technology and sustainable practices to optimize plant growth, enhance productivity, and ensure high-quality yields."</p>
                     <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
                 </div>
                 <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
@@ -218,12 +218,16 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="fs-5 fw-bold text-primary">Why Choosing Us!</p>
-                    <h1 class="display-5 mb-4">Few Reasons Why We Produce High Quality Vegies.</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
-                </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+    <p class="fs-5 fw-bold text-primary">Why Choosing Us!</p>
+    <h1 class="display-5 mb-4">Few Reasons Why We Produce High Quality Vegies.</h1>
+    <p class="mb-4" style="text-align: justify;">Choosing us means opting for high-quality vegetables produced with exceptional care and expertise. 
+        Our greenhouses are equipped with advanced technology that optimizes plant growth, ensuring consistent and superior yields. 
+        We prioritize sustainable farming practices that maintain freshness, nutrition, and environmental responsibility. 
+        Backed by a dedicated team committed to excellence, we uphold strict cultivation standards to deliver the best produce to our customers.</p>
+    
+</div>
+
                 <div class="col-lg-6">
                     <div class="row g-4 align-items-center">
                         <div class="col-md-6">
@@ -281,7 +285,7 @@
                             </div>
                             <h4 class="mb-3"><?php echo $services[0]['Title1']; ?></h4>
                             <p class="mb-4"><?php echo $services[0]['1Info']; ?></p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -296,7 +300,7 @@
                             </div>
                             <h4 class="mb-3"><?php echo $services[0]['Title2']; ?></h4>
                             <p class="mb-4"><?php echo $services[0]['2Info']; ?></p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -311,7 +315,7 @@
                             </div>
                             <h4 class="mb-3"><?php echo $services[0]['Title3']; ?></h4>
                             <p class="mb-4"><?php echo $services[0]['3Info']; ?></p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -326,7 +330,7 @@
                             </div>
                             <h4 class="mb-3"><?php echo $services[0]['Title4']; ?></h4>
                             <p class="mb-4"><?php echo $services[0]['4Info']; ?></p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -341,7 +345,7 @@
                             </div>
                             <h4 class="mb-3"><?php echo $services[0]['Title5']; ?></h4>
                             <p class="mb-4"><?php echo $services[0]['5Info']; ?></p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -356,7 +360,7 @@
                             </div>
                             <h4 class="mb-3"><?php echo $services[0]['Title6']; ?></h4>
                             <p class="mb-4"><?php echo $services[0]['6Info']; ?></p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -366,54 +370,6 @@
     <!-- Service End -->
 
 
-    <!-- Quote Start -->
-    <div class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/landing_naujan.jpg">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="bg-white rounded p-4 p-sm-5 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="display-5 text-center mb-5">Get A Free Quote</h1>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="gname" placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control bg-light border-0" id="gmail" placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cname" placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cage" placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Submit Now</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Quote End -->
 
 
 
@@ -423,17 +379,17 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-bold text-primary">Our Team</p>
-                <h1 class="display-5 mb-5">Dedicated & Experienced Team Members</h1>
+                <h1 class="display-5 mb-5"> Team Members</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded">
                         <img class="img-fluid" src="img/team-1.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Doris Jordan</h4>
+                            <h4 class="mb-0">Myko Piolo G. Feudo</h4>
                             <p class="text-primary">Landscape Designer</p>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://web.facebook.com/mykopiolo.feudo.3"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
                             </div>
@@ -444,10 +400,10 @@
                     <div class="team-item rounded">
                         <img class="img-fluid" src="img/team-2.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Johnny Ramirez</h4>
+                            <h4 class="mb-0">Jomar L. Mendoza</h4>
                             <p class="text-primary">Garden Designer</p>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://web.facebook.com/Mr.labaguis"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
                             </div>
@@ -458,10 +414,10 @@
                     <div class="team-item rounded">
                         <img class="img-fluid" src="img/team-3.jpg" alt="">
                         <div class="team-text">
-                            <h4 class="mb-0">Diana Wagner</h4>
+                            <h4 class="mb-0">Ma. Angelie Patrice T. Fabella r</h4>
                             <p class="text-primary">Senior Gardener</p>
                             <div class="team-social d-flex">
-                                <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square rounded-circle me-2" href="https://web.facebook.com/marieangelrhicia.fabella"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-square rounded-circle me-2" href=""><i class="fab fa-instagram"></i></a>
                             </div>
@@ -481,7 +437,7 @@
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="fs-5 fw-bold text-primary">Testimonial</p>
                     <h1 class="display-5 mb-5">What Our Clients Say About Us!</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem sit clita duo justo.</p>
+                    <p class="mb-4">Discover why our clients trust and recommend us through their experiences and feedback. Their stories highlight our commitment to quality, reliability, and exceptional service."</p>
                     <a class="btn btn-primary py-3 px-4" href="">See More</a>
                 </div>
                 <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
@@ -489,14 +445,14 @@
                         <div class="testimonial-item">
                             <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="">
                             <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
+                            <h4>Raquelita Umali</h4>
+                            <span>Head of Municipal Agricultural Office</span>
                         </div>
                         <div class="testimonial-item">
                             <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="">
                             <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
-                            <h4>Client Name</h4>
-                            <span>Profession</span>
+                            <h4>Marlon Manalo</h4>
+                            <span>Engineer</span>
                         </div>
                     </div>
                 </div>
