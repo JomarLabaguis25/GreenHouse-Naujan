@@ -13,7 +13,7 @@ class InfoModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id', 'province_name','NaujanInfo', 'table_info'];
+    protected $allowedFields    = ['id', 'province_name', 'NaujanInfo', 'table_info'];
 
     // Dates
     protected $useTimestamps = false;
