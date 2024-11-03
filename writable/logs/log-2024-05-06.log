@@ -1,0 +1,16 @@
+CRITICAL - 2024-05-06 02:23:52 --> Undefined property: App\Controllers\PlantController::$input
+in APPPATH\Controllers\PlantController.php on line 13.
+ 1 APPPATH\Controllers\PlantController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PlantController::$input', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\PlantController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->insertFertilizer()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-06 02:30:46 --> Undefined property: App\Controllers\PlantController::$input
+in APPPATH\Controllers\PlantController.php on line 13.
+ 1 APPPATH\Controllers\PlantController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PlantController::$input', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\PlantController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->insertFertilizer()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')

@@ -1,0 +1,573 @@
+CRITICAL - 2024-08-05 00:01:14 --> Undefined variable $plots
+in APPPATH\Views\dashboard\charts.php on line 212.
+ 1 APPPATH\Views\dashboard\charts.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plots', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php', 212)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(98): view('dashboard/charts', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 00:01:33 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `DISTINC...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(74): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 00:01:33 --> Unknown column 'DISTINCT' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `plot_id`
+FROM `environmental_measurements`
+ORDER BY `plot_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(74): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 00:01:34 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `DISTINC...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(74): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 00:01:34 --> Unknown column 'DISTINCT' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `plot_id`
+FROM `environmental_measurements`
+ORDER BY `plot_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(74): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 00:02:08 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `DISTINC...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 00:02:08 --> Unknown column 'DISTINCT' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `plot_id`
+FROM `environmental_measurements`
+ORDER BY `plot_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(75): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 00:02:10 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `DISTINC...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 00:02:10 --> Unknown column 'DISTINCT' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `plot_id`
+FROM `environmental_measurements`
+ORDER BY `plot_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(75): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 00:02:43 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `DISTINC...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 00:02:43 --> Unknown column 'DISTINCT' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `plot_id`
+FROM `environmental_measurements`
+ORDER BY `plot_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(75): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 00:22:39 --> mysqli_sql_exception: Unknown column 'DISTINCT' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `DISTINC...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `DISTINC...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `DISTINC...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINC...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(75): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 00:22:39 --> Unknown column 'DISTINCT' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `DISTINCT` `plot_id`
+FROM `environmental_measurements`
+ORDER BY `plot_id` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(75): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 00:23:20 --> Undefined variable $plots
+in APPPATH\Views\dashboard\charts.php on line 212.
+ 1 APPPATH\Views\dashboard\charts.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plots', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php', 212)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(101): view('dashboard/charts', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 00:33:29 --> Undefined variable $distinctPlots
+in APPPATH\Views\dashboard\charts.php on line 211.
+ 1 APPPATH\Views\dashboard\charts.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $distinctPlots', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php', 211)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(99): view('dashboard/charts', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 00:57:14 --> cURL error 6: Could not resolve host: api-api.pusher.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-api.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722819433&auth_version=1.0&body_md5=be2ab3973c9dd76cc953859f4f58a249&auth_signature=2525981226f43d3b02797f30f873579cab2ec92de275b9620766d36f0f3add4e
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-05 00:57:13\\",\\"soil_moisture\\":3500,\\"temperature\\":25.5,\\"humidity\\":60,\\"nutrient_level\\":40}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 00:58:33 --> cURL error 6: Could not resolve host: api-api.pusher.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-api.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722819513&auth_version=1.0&body_md5=68000d465524fcfa3004cf4a212c952d&auth_signature=a77f86518d0492c955eac06e848224f2518c8d4c70544ada3e4e2cd9066429c2
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-05 00:58:33\\",\\"soil_moisture\\":3500,\\"temperature\\":25.5,\\"humidity\\":60,\\"nutrient_level\\":40}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 00:59:41 --> cURL error 6: Could not resolve host: api-api.pusher.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-api.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722819581&auth_version=1.0&body_md5=9f0b7bb19bba4f80854b834f4cc85786&auth_signature=1b359734726a2aa67f0544f2853d8b8d9a01189b60971bab8a4736eae4028eb9
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-05 00:59:41\\",\\"soil_moisture\\":3500,\\"temperature\\":25.5,\\"humidity\\":60,\\"nutrient_level\\":40}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 01:00:09 --> cURL error 6: Could not resolve host: api-api.pusher.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-api.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722819609&auth_version=1.0&body_md5=6c1c2c95ee6653871c550cc019596280&auth_signature=622cb9be9fe29d288b3443fe0b40b27bc6b4c1e3100017e7ead34370f39f6e51
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-05 01:00:08\\",\\"soil_moisture\\":3500,\\"temperature\\":25.5,\\"humidity\\":65,\\"nutrient_level\\":40}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 02:58:23 --> Undefined variable $liveData
+in APPPATH\Views\dashboard\dash.php on line 163.
+ 1 APPPATH\Views\dashboard\dash.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liveData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 5 APPPATH\Controllers\AdminController.php(55): view('dashboard/dash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 08:39:35 --> Undefined variable $liveData
+in APPPATH\Views\dashboard\dash.php on line 163.
+ 1 APPPATH\Views\dashboard\dash.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liveData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 5 APPPATH\Controllers\AdminController.php(55): view('dashboard/dash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 08:45:12 --> Undefined array key "PlantName"
+in APPPATH\Views\dashboard\History.php on line 156.
+ 1 APPPATH\Views\dashboard\History.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PlantName"', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php', 156)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/History', [], true)
+ 5 APPPATH\Controllers\AdminController.php(207): view('dashboard/History', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->History()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 08:45:14 --> Class "App\Models\PlantFertilizerModel" not found
+in APPPATH\Controllers\AdminController.php on line 156.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 09:15:25 --> Undefined variable $plot
+in APPPATH\Views\dashboard\cards.php on line 118.
+ 1 APPPATH\Views\dashboard\cards.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plot', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\cards.php', 118)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\cards.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/cards', [], true)
+ 5 APPPATH\Controllers\AdminController.php(265): view('dashboard/cards', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->cards()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 09:15:48 --> Undefined variable $plot
+in APPPATH\Views\dashboard\cards.php on line 118.
+ 1 APPPATH\Views\dashboard\cards.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plot', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\cards.php', 118)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\cards.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/cards', [], true)
+ 5 APPPATH\Controllers\AdminController.php(265): view('dashboard/cards', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->cards()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 09:15:50 --> Undefined variable $plot
+in APPPATH\Views\dashboard\cards.php on line 118.
+ 1 APPPATH\Views\dashboard\cards.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plot', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\cards.php', 118)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\cards.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/cards', [], true)
+ 5 APPPATH\Controllers\AdminController.php(265): view('dashboard/cards', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->cards()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 09:25:03 --> Undefined variable $morning_labels
+in APPPATH\Views\dashboard\view_plot.php on line 176.
+ 1 APPPATH\Views\dashboard\view_plot.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $morning_labels', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\view_plot.php', 176)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\view_plot.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/view_plot', [], true)
+ 5 APPPATH\Controllers\AdminController.php(277): view('dashboard/view_plot', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->viewPlotDroughtMonitoring('1')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 09:31:19 --> Invalid file: "admin/plot_drought_monitoring.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/plot_drought_monitoring.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/plot_drought_monitoring', [], true)
+ 3 APPPATH\Controllers\AdminController.php(335): view('admin/plot_drought_monitoring', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->viewPlotDroughtMonitoring('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 09:31:21 --> Invalid file: "admin/plot_drought_monitoring.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/plot_drought_monitoring.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('admin/plot_drought_monitoring', [], true)
+ 3 APPPATH\Controllers\AdminController.php(335): view('admin/plot_drought_monitoring', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->viewPlotDroughtMonitoring('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 09:31:37 --> Invalid file: "dahboard/plot_drought_monitoring.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dahboard/plot_drought_monitoring.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dahboard/plot_drought_monitoring', [], true)
+ 3 APPPATH\Controllers\AdminController.php(335): view('dahboard/plot_drought_monitoring', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->viewPlotDroughtMonitoring('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 09:32:03 --> Invalid file: "dahboard/plot_drought_monitoring.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dahboard/plot_drought_monitoring.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dahboard/plot_drought_monitoring', [], true)
+ 3 APPPATH\Controllers\AdminController.php(335): view('dahboard/plot_drought_monitoring', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->viewPlotDroughtMonitoring('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 09:32:04 --> Invalid file: "dahboard/plot_drought_monitoring.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dahboard/plot_drought_monitoring.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dahboard/plot_drought_monitoring', [], true)
+ 3 APPPATH\Controllers\AdminController.php(335): view('dahboard/plot_drought_monitoring', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->viewPlotDroughtMonitoring('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 10:09:22 --> Undefined variable $plots
+in APPPATH\Views\dashboard\nutrients.php on line 125.
+ 1 APPPATH\Views\dashboard\nutrients.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plots', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\nutrients.php', 125)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\nutrients.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/nutrients', [], true)
+ 5 APPPATH\Controllers\AdminController.php(340): view('dashboard/nutrients')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->nutrients()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 10:09:23 --> Undefined variable $plots
+in APPPATH\Views\dashboard\nutrients.php on line 125.
+ 1 APPPATH\Views\dashboard\nutrients.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plots', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\nutrients.php', 125)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\nutrients.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/nutrients', [], true)
+ 5 APPPATH\Controllers\AdminController.php(340): view('dashboard/nutrients')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->nutrients()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 10:21:27 --> Class "App\Models\PlantFertilizerModel" not found
+in APPPATH\Controllers\AdminController.php on line 157.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 10:28:05 --> Class "App\Models\FertilizerApplicationModel" not found
+in APPPATH\Controllers\AdminController.php on line 160.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 10:28:07 --> Class "App\Models\FertilizerApplicationModel" not found
+in APPPATH\Controllers\AdminController.php on line 160.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 10:28:20 --> Class "App\Models\FertilizerApplicationModel" not found
+in APPPATH\Controllers\AdminController.php on line 160.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 10:28:55 --> Undefined array key "fertilizer_name"
+in APPPATH\Views\dashboard\AppliedFertilizer.php on line 204.
+ 1 APPPATH\Views\dashboard\AppliedFertilizer.php(204): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "fertilizer_name"', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php', 204)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/AppliedFertilizer', [], true)
+ 5 APPPATH\Controllers\AdminController.php(172): view('dashboard/AppliedFertilizer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 10:36:12 --> mysqli_sql_exception: Table 'greenhouse.fertilizer' doesn't exist in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `fertili...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fertili...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fertili...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `fertili...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(169): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 10:36:12 --> Table 'greenhouse.fertilizer' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `fertilizer_application`.*, `fertilizer`.`fertilizer_name`, `fertilizer`.`type`
+FROM `fertilizer_application`
+JOIN `fertilizer` ON `fertilizer`.`id` = `fertilizer_application`.`fertilizer_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(169): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 10:42:47 --> mysqli_sql_exception: Table 'greenhouse.fertilizer' doesn't exist in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `fertili...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fertili...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fertili...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `fertili...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(169): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 10:42:47 --> Table 'greenhouse.fertilizer' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `fertilizer_application`.*, `fertilizer`.`fertilizer_name`, `fertilizer`.`type`
+FROM `fertilizer_application`
+JOIN `fertilizer` ON `fertilizer`.`id` = `fertilizer_application`.`fertilizer_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(169): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 10:42:48 --> mysqli_sql_exception: Table 'greenhouse.fertilizer' doesn't exist in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `fertili...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fertili...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fertili...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `fertili...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(169): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 10:42:48 --> Table 'greenhouse.fertilizer' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `fertilizer_application`.*, `fertilizer`.`fertilizer_name`, `fertilizer`.`type`
+FROM `fertilizer_application`
+JOIN `fertilizer` ON `fertilizer`.`id` = `fertilizer_application`.`fertilizer_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(169): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-05 10:43:07 --> mysqli_sql_exception: Table 'greenhouse.fertilizer' doesn't exist in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `fertili...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `fertili...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `fertili...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `fertili...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(169): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-05 10:43:07 --> Table 'greenhouse.fertilizer' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `fertilizer_application`.*, `fertilizer`.`fertilizer_name`, `fertilizer`.`type`
+FROM `fertilizer_application`
+JOIN `fertilizer` ON `fertilizer`.`id` = `fertilizer_application`.`fertilizer_id`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(169): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-05 10:44:08 --> Undefined variable $fertilizer
+in APPPATH\Views\dashboard\AppliedFertilizer.php on line 154.
+ 1 APPPATH\Views\dashboard\AppliedFertilizer.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fertilizer', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php', 154)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/AppliedFertilizer', [], true)
+ 5 APPPATH\Controllers\AdminController.php(177): view('dashboard/AppliedFertilizer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')

@@ -1,0 +1,210 @@
+CRITICAL - 2024-03-06 11:56:14 --> Invalid file: "dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 11:57:01 --> Invalid file: "dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 11:57:02 --> Invalid file: "dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 11:57:38 --> Invalid file: "dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dash', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 11:57:39 --> Invalid file: "dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dash', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 12:44:18 --> Invalid file: "dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dash', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:19:03 --> Invalid file: "dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dash', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:21:19 --> Invalid file: "dashboard.dash"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard.dash')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard.dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dashboard.dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:21:44 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:21:45 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:22:18 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:22:19 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:22:19 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:22:19 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:24:53 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:24:54 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\AdminController.php(11): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:26:07 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:26:07 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:26:08 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:26:08 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-06 14:26:08 --> Invalid file: "dashboard/dash.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/dash.php')
+ 2 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 3 APPPATH\Controllers\Home.php(49): view('dashboard/dash')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')

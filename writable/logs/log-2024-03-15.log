@@ -1,0 +1,296 @@
+CRITICAL - 2024-03-15 12:59:32 --> Declaration of App\Models\PlantModel::update($id, $data) must be compatible with CodeIgniter\Model::update($id = null, $data = null): bool
+in APPPATH\Models\PlantModel.php on line 56.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-15 13:24:11 --> Unknown column 'plant_name' in 'field list'
+in APPPATH\Views\dashboard\charts.php on line 362.
+ 1 APPPATH\Views\dashboard\charts.php(362): mysqli->query('SELECT plant_name, COUNT(*) AS plant_count FROM list_of_plants GROUP BY plant_name')
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(21): view('dashboard/charts')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 13:26:37 --> Undefined variable $plant_count
+in APPPATH\Views\dashboard\charts.php on line 416.
+ 1 APPPATH\Views\dashboard\charts.php(416): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plant_count', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\charts.php', 416)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(21): view('dashboard/charts')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 13:28:36 --> Undefined variable $plant_count
+in APPPATH\Views\dashboard\charts.php on line 422.
+ 1 APPPATH\Views\dashboard\charts.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plant_count', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\charts.php', 422)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(21): view('dashboard/charts')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 13:28:38 --> Undefined variable $plant_count
+in APPPATH\Views\dashboard\charts.php on line 422.
+ 1 APPPATH\Views\dashboard\charts.php(422): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plant_count', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\charts.php', 422)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(21): view('dashboard/charts')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 14:02:45 --> Undefined array key "Status"
+in APPPATH\Views\dashboard\tables.php on line 180.
+ 1 APPPATH\Views\dashboard\tables.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Status"', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 180)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(27): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 14:38:12 --> Call to undefined method App\Models\PlantModel::updateHarvestStatus
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\PlantController.php(77): CodeIgniter\Model->__call('updateHarvestStatus', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('11')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 14:43:44 --> Class "App\Models\Plant" not found
+in APPPATH\Models\PlantModel.php on line 68.
+ 1 APPPATH\Controllers\PlantController.php(80): App\Models\PlantModel->updateHarvestStatus('1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 14:45:21 --> Class "App\Models\Plant" not found
+in APPPATH\Models\PlantModel.php on line 69.
+ 1 APPPATH\Controllers\PlantController.php(80): App\Models\PlantModel->updateHarvestStatus('1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 14:46:59 --> Cannot redeclare App\Models\PlantModel::$table
+in APPPATH\Models\PlantModel.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-15 14:47:01 --> Cannot redeclare App\Models\PlantModel::$table
+in APPPATH\Models\PlantModel.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-15 14:47:41 --> Cannot redeclare App\Models\PlantModel::$table
+in APPPATH\Models\PlantModel.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-15 14:47:43 --> Cannot redeclare App\Models\PlantModel::$table
+in APPPATH\Models\PlantModel.php on line 65.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-15 14:48:53 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 78.
+ 1 APPPATH\Controllers\PlantController.php(80): App\Models\PlantModel->updateHarvestStatus('1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 14:56:42 --> Cannot redeclare App\Models\PlantModel::$table
+in APPPATH\Models\PlantModel.php on line 92.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-15 15:02:01 --> Class "Route" not found
+in APPPATH\Config\Routes.php on line 56.
+ 1 SYSTEMPATH\Router\RouteCollection.php(339): require()
+ 2 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:05:37 --> Undefined variable $plant
+in APPPATH\Views\dashboard\tables.php on line 181.
+ 1 APPPATH\Views\dashboard\tables.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plant', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 181)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(27): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:05:39 --> Undefined variable $plant
+in APPPATH\Views\dashboard\tables.php on line 181.
+ 1 APPPATH\Views\dashboard\tables.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plant', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 181)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(27): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:05:41 --> Undefined variable $plant
+in APPPATH\Views\dashboard\tables.php on line 181.
+ 1 APPPATH\Views\dashboard\tables.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plant', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 181)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(27): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:06:23 --> Undefined variable $plant
+in APPPATH\Views\dashboard\tables.php on line 181.
+ 1 APPPATH\Views\dashboard\tables.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plant', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 181)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(27): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:06:24 --> Undefined variable $plant
+in APPPATH\Views\dashboard\tables.php on line 181.
+ 1 APPPATH\Views\dashboard\tables.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plant', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 181)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(27): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:09:52 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 78.
+ 1 APPPATH\Controllers\PlantController.php(88): App\Models\PlantModel->updateHarvestStatus('1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:09:53 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 78.
+ 1 APPPATH\Controllers\PlantController.php(88): App\Models\PlantModel->updateHarvestStatus('1')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('1')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:11:22 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 80.
+ 1 APPPATH\Controllers\PlantController.php(88): App\Models\PlantModel->updateHarvestStatus('11')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('11')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:11:24 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 80.
+ 1 APPPATH\Controllers\PlantController.php(88): App\Models\PlantModel->updateHarvestStatus('11')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('11')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:11:25 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 80.
+ 1 APPPATH\Controllers\PlantController.php(88): App\Models\PlantModel->updateHarvestStatus('11')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('11')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:11:25 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 80.
+ 1 APPPATH\Controllers\PlantController.php(88): App\Models\PlantModel->updateHarvestStatus('11')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('11')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:11:25 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 80.
+ 1 APPPATH\Controllers\PlantController.php(88): App\Models\PlantModel->updateHarvestStatus('11')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('11')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:11:25 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 80.
+ 1 APPPATH\Controllers\PlantController.php(88): App\Models\PlantModel->updateHarvestStatus('11')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('11')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:11:25 --> Attempt to assign property "HarvestStatus" on array
+in APPPATH\Models\PlantModel.php on line 80.
+ 1 APPPATH\Controllers\PlantController.php(88): App\Models\PlantModel->updateHarvestStatus('11')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->updateHarvestStatus('11')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 15:18:02 --> syntax error, unexpected single-quoted string "HarvestStatus", expecting "]"
+in APPPATH\Models\PlantModel.php on line 51.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Models\\PlantModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\PlantModel')
+ 3 APPPATH\Controllers\AdminController.php(25): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\PlantModel')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 16:01:12 --> Undefined variable $plantsData
+in APPPATH\Views\dashboard\tables.php on line 432.
+ 1 APPPATH\Views\dashboard\tables.php(432): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plantsData', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 432)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(27): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 16:04:24 --> Undefined variable $list_of_plants
+in APPPATH\Views\dashboard\tables.php on line 432.
+ 1 APPPATH\Views\dashboard\tables.php(432): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $list_of_plants', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 432)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(27): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-15 16:04:39 --> Undefined variable $plantsData
+in APPPATH\Views\dashboard\tables.php on line 432.
+ 1 APPPATH\Views\dashboard\tables.php(432): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $plantsData', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 432)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(27): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')

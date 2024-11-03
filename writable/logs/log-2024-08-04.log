@@ -1,0 +1,891 @@
+CRITICAL - 2024-08-04 00:57:20 --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'greenhouse.useraccount' doesn't exist
+in APPPATH\Views\dashboard\dash.php on line 85.
+ 1 APPPATH\Views\dashboard\dash.php(85): PDOStatement->execute()
+ 2 APPPATH\Views\dashboard\dash.php(100): loginUser('fullName', 'password')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 6 APPPATH\Controllers\AdminController.php(54): view('dashboard/dash', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 01:10:11 --> Undefined array key "PlantName"
+in APPPATH\Views\dashboard\History.php on line 156.
+ 1 APPPATH\Views\dashboard\History.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PlantName"', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php', 156)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/History', [], true)
+ 5 APPPATH\Controllers\AdminController.php(152): view('dashboard/History', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->History()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 01:10:14 --> Class "App\Models\PlantFertilizerModel" not found
+in APPPATH\Controllers\AdminController.php on line 101.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 01:10:16 --> Class "App\Models\PlantFertilizerModel" not found
+in APPPATH\Controllers\AdminController.php on line 158.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->Reports()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 01:10:19 --> SQLSTATE[42S02]: Base table or view not found: 1146 Table 'greenhouse.useraccount' doesn't exist
+in APPPATH\Views\dashboard\dash.php on line 85.
+ 1 APPPATH\Views\dashboard\dash.php(85): PDOStatement->execute()
+ 2 APPPATH\Views\dashboard\dash.php(100): loginUser('fullName', 'password')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 6 APPPATH\Controllers\AdminController.php(54): view('dashboard/dash', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 01:11:59 --> Table 'greenhouse.temperaturemeasurement' doesn't exist
+in APPPATH\Views\dashboard\charts.php on line 340.
+ 1 APPPATH\Views\dashboard\charts.php(340): mysqli->query('SELECT timestamp, temperature, humidity FROM temperaturemeasurement')
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(58): view('dashboard/charts')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 01:14:30 --> Table 'greenhouse.temperaturemeasurement' doesn't exist
+in APPPATH\Views\dashboard\charts.php on line 340.
+ 1 APPPATH\Views\dashboard\charts.php(340): mysqli->query('SELECT timestamp, temperature, humidity FROM temperaturemeasurement')
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(58): view('dashboard/charts')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 01:24:46 --> Undefined variable $soilMoistureData
+in APPPATH\Views\dashboard\charts.php on line 142.
+ 1 APPPATH\Views\dashboard\charts.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $soilMoistureData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php', 142)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(58): view('dashboard/charts')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 09:40:29 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 09:40:30 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 09:40:30 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 09:40:31 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 09:40:37 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 09:40:58 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 09:40:59 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 09:40:59 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\AdminController.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\AdminController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AdminController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AdminController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\AdminController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 09:41:19 --> Class "App\Controllers\MeasurementModel" not found
+in APPPATH\Controllers\AdminController.php on line 59.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 09:41:31 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 09:41:31 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 09:49:42 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 09:49:42 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 09:49:44 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 09:49:44 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 09:49:46 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 09:49:46 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 09:58:21 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 09:58:21 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:02:22 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 10:02:22 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:02:23 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 10:02:23 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:02:24 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 10:02:24 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:02:24 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 10:02:24 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:02:24 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 10:02:24 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:02:37 --> mysqli_sql_exception: Unknown column 'timestamp' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `timesta...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `timesta...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `timesta...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timesta...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 10:02:37 --> Unknown column 'timestamp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `timestamp`, `temperature`, `humidity`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(63): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:03:54 --> mysqli_sql_exception: Unknown column 'morning_measurement' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `measure...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `measure...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `measure...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `measure...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(66): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 10:03:54 --> Unknown column 'morning_measurement' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `measurement_date`, `morning_measurement`, `afternoon_measurement`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(66): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:03:55 --> mysqli_sql_exception: Unknown column 'morning_measurement' in 'field list' in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `measure...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `measure...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `measure...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `measure...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(66): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 10:03:55 --> Unknown column 'morning_measurement' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `measurement_date`, `morning_measurement`, `afternoon_measurement`
+FROM `environmental_measurements`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(66): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:04:50 --> mysqli_sql_exception: Table 'greenhouse.list_of_plants' doesn't exist in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT PlantNam...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT PlantNam...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT PlantNam...')
+#3 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(70): CodeIgniter\Database\BaseConnection->query('SELECT PlantNam...')
+#4 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#5 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2024-08-04 10:04:50 --> Table 'greenhouse.list_of_plants' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\AdminController.php(70): CodeIgniter\Database\BaseConnection->query('SELECT PlantName, COUNT(*) AS plant_count FROM list_of_plants GROUP BY PlantName')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:04:51 --> mysqli_sql_exception: Table 'greenhouse.list_of_plants' doesn't exist in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT PlantNam...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT PlantNam...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT PlantNam...')
+#3 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(70): CodeIgniter\Database\BaseConnection->query('SELECT PlantNam...')
+#4 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#5 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2024-08-04 10:04:51 --> Table 'greenhouse.list_of_plants' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\AdminController.php(70): CodeIgniter\Database\BaseConnection->query('SELECT PlantName, COUNT(*) AS plant_count FROM list_of_plants GROUP BY PlantName')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 10:07:44 --> mysqli_sql_exception: Table 'greenhouse.list_of_plants' doesn't exist in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT PlantNam...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT PlantNam...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT PlantNam...')
+#3 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(70): CodeIgniter\Database\BaseConnection->query('SELECT PlantNam...')
+#4 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#5 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2024-08-04 10:07:44 --> Table 'greenhouse.list_of_plants' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\AdminController.php(70): CodeIgniter\Database\BaseConnection->query('SELECT PlantName, COUNT(*) AS plant_count FROM list_of_plants GROUP BY PlantName')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 10:08:52 --> Undefined variable $soilMeasurementsData
+in APPPATH\Views\dashboard\charts.php on line 142.
+ 1 APPPATH\Views\dashboard\charts.php(142): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $soilMeasurementsData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php', 142)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(95): view('dashboard/charts', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 10:09:48 --> Undefined variable $temperatureHumidityData
+in APPPATH\Views\dashboard\charts.php on line 251.
+ 1 APPPATH\Views\dashboard\charts.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temperatureHumidityData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php', 251)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(87): view('dashboard/charts', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 10:10:18 --> Undefined variable $temperatureHumidityData
+in APPPATH\Views\dashboard\charts.php on line 251.
+ 1 APPPATH\Views\dashboard\charts.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temperatureHumidityData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php', 251)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(87): view('dashboard/charts', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 10:10:19 --> Undefined variable $temperatureHumidityData
+in APPPATH\Views\dashboard\charts.php on line 251.
+ 1 APPPATH\Views\dashboard\charts.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $temperatureHumidityData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php', 251)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(87): view('dashboard/charts', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:52:30 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:52:41 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:52:51 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:53:02 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:53:58 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:54:09 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:54:19 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:54:29 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:54:40 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:54:50 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:55:00 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 11:55:11 --> syntax error, unexpected token "<", expecting "function"
+in APPPATH\Controllers\ApiController.php on line 18.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\Capstone\\ci4\\app\\Controllers\\ApiController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ApiController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ApiController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\ApiController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 12:06:08 --> Not enough quantity to harvest for planted_plant_id: 21
+ERROR - 2024-08-04 12:41:17 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'greenhouse.environmental_measurements.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `plot_id...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `plot_id...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `plot_id...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `plot_id...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(65): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 12:41:17 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'greenhouse.environmental_measurements.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `plot_id`, `temperature`, `humidity`, `nutrient_level`, `soil_moisture`
+FROM `environmental_measurements`
+GROUP BY `plot_id`
+ORDER BY `measurement_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(65): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 12:44:23 --> mysqli_sql_exception: Table 'greenhouse.list_of_plants' doesn't exist in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT PlantNam...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT PlantNam...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT PlantNam...')
+#3 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT PlantNam...')
+#4 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#5 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2024-08-04 12:44:23 --> Table 'greenhouse.list_of_plants' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\AdminController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT PlantName, COUNT(*) AS plant_count FROM list_of_plants GROUP BY PlantName')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 12:44:25 --> mysqli_sql_exception: Table 'greenhouse.list_of_plants' doesn't exist in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT PlantNam...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT PlantNam...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT PlantNam...')
+#3 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT PlantNam...')
+#4 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#5 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2024-08-04 12:44:25 --> Table 'greenhouse.list_of_plants' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Controllers\AdminController.php(74): CodeIgniter\Database\BaseConnection->query('SELECT PlantName, COUNT(*) AS plant_count FROM list_of_plants GROUP BY PlantName')
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-04 12:45:04 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'greenhouse.environmental_measurements.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `plot_id...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `plot_id...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `plot_id...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `plot_id...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(65): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-04 12:45:04 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'greenhouse.environmental_measurements.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `plot_id`, `temperature`, `humidity`, `nutrient_level`, `soil_moisture`
+FROM `environmental_measurements`
+GROUP BY `plot_id`
+ORDER BY `measurement_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(65): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 12:45:15 --> Undefined variable $liveData
+in APPPATH\Views\dashboard\charts.php on line 120.
+ 1 APPPATH\Views\dashboard\charts.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liveData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php', 120)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\charts.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/charts', [], true)
+ 5 APPPATH\Controllers\AdminController.php(87): view('dashboard/charts', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 23:58:37 --> Undefined array key "PlantName"
+in APPPATH\Views\dashboard\History.php on line 156.
+ 1 APPPATH\Views\dashboard\History.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PlantName"', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php', 156)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/History', [], true)
+ 5 APPPATH\Controllers\AdminController.php(198): view('dashboard/History', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->History()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 23:58:39 --> Class "App\Models\PlantFertilizerModel" not found
+in APPPATH\Controllers\AdminController.php on line 204.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->Reports()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-04 23:58:42 --> Class "App\Models\PlantFertilizerModel" not found
+in APPPATH\Controllers\AdminController.php on line 147.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')

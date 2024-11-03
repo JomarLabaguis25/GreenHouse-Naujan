@@ -1,0 +1,180 @@
+CRITICAL - 2024-03-28 11:39:59 --> Too few arguments to function App\Controllers\UserController::UserReg(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 11:43:04 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\UserController.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-28 11:43:06 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\UserController.php on line 3.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-28 11:43:48 --> Too few arguments to function App\Controllers\UserController::UserReg(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 11:43:49 --> Too few arguments to function App\Controllers\UserController::UserReg(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 11:48:01 --> Too few arguments to function App\Controllers\UserController::UserReg(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 11:48:02 --> Too few arguments to function App\Controllers\UserController::UserReg(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 11:48:14 --> Too few arguments to function App\Controllers\UserController::UserReg(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 11:49:32 --> Undefined property: App\Controllers\UserController::$load
+in APPPATH\Controllers\UserController.php on line 13.
+ 1 APPPATH\Controllers\UserController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserController::$load', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\UserController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 11:49:34 --> Undefined property: App\Controllers\UserController::$load
+in APPPATH\Controllers\UserController.php on line 13.
+ 1 APPPATH\Controllers\UserController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\UserController::$load', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\UserController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 11:56:44 --> Call to undefined method App\Models\UserModel::registerUser
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\UserController.php(27): CodeIgniter\Model->__call('registerUser', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:01:30 --> Call to a member function model() on null
+in APPPATH\Models\UserModel.php on line 47.
+ 1 APPPATH\Controllers\UserController.php(24): App\Models\UserModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:01:34 --> Call to a member function model() on null
+in APPPATH\Models\UserModel.php on line 47.
+ 1 APPPATH\Controllers\UserController.php(24): App\Models\UserModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:02:57 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Models\UserModel.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-28 12:03:29 --> Call to a member function model() on null
+in APPPATH\Models\UserModel.php on line 46.
+ 1 APPPATH\Controllers\UserController.php(24): App\Models\UserModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:03:55 --> Call to a member function model() on null
+in APPPATH\Models\UserModel.php on line 46.
+ 1 APPPATH\Controllers\UserController.php(24): App\Models\UserModel->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:05:37 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('Myko Piolo Feudo', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('Myko Piolo Feudo', true)
+ 3 APPPATH\Models\UserModel.php(44): CodeIgniter\Model->insert('Myko Piolo Feudo')
+ 4 APPPATH\Controllers\UserController.php(27): App\Models\UserModel->registerUser('Myko Piolo Feudo', 'Department of Agriculture', 'feudomykopiolo22@gmail.com', 'mykopiolo@22')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:05:41 --> CodeIgniter\BaseModel::transformDataToArray(): Return value must be of type array, string returned
+in SYSTEMPATH\BaseModel.php on line 1750.
+ 1 SYSTEMPATH\BaseModel.php(748): CodeIgniter\BaseModel->transformDataToArray('Myko Piolo Feudo', 'insert')
+ 2 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert('Myko Piolo Feudo', true)
+ 3 APPPATH\Models\UserModel.php(44): CodeIgniter\Model->insert('Myko Piolo Feudo')
+ 4 APPPATH\Controllers\UserController.php(27): App\Models\UserModel->registerUser('Myko Piolo Feudo', 'Department of Agriculture', 'feudomykopiolo22@gmail.com', 'mykopiolo@22')
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserReg()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:06:45 --> syntax error, unexpected token "public", expecting end of file
+in APPPATH\Controllers\UserController.php on line 40.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\UserController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UserController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UserController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\UserController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:56:19 --> Cannot use Illuminate\Http\Request as Request because the name is already in use
+in APPPATH\Controllers\UserController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-03-28 12:56:40 --> Too few arguments to function App\Controllers\UserController::UserLogin(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:57:18 --> Too few arguments to function App\Controllers\UserController::UserLogin(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:57:19 --> Too few arguments to function App\Controllers\UserController::UserLogin(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:58:55 --> Too few arguments to function App\Controllers\UserController::UserLogin(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 12:58:56 --> Too few arguments to function App\Controllers\UserController::UserLogin(), 0 passed in C:\Users\Acer\laragon\www\capstone\ci4\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\UserController.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->UserLogin()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-28 13:07:12 --> Cannot use Illuminate\Http\Request as Request because the name is already in use
+in APPPATH\Controllers\UserController.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

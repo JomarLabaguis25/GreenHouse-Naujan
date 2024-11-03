@@ -1,0 +1,43 @@
+CRITICAL - 2023-12-13 11:51:05 --> Cannot use object of type CodeIgniter\Router\RouteCollection as array
+in APPPATH\Config\Routes.php on line 22.
+ 1 SYSTEMPATH\Router\RouteCollection.php(339): require()
+ 2 SYSTEMPATH\CodeIgniter.php(787): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH\CodeIgniter.php(442): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2023-12-13 11:51:18 --> Cannot call constructor
+in APPPATH\Controllers\UserController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2023-12-13 11:51:19 --> Cannot call constructor
+in APPPATH\Controllers\UserController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2023-12-13 11:51:19 --> Cannot call constructor
+in APPPATH\Controllers\UserController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2023-12-13 11:51:20 --> Cannot call constructor
+in APPPATH\Controllers\UserController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2023-12-13 11:51:24 --> Cannot call constructor
+in APPPATH\Controllers\UserController.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\UserController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\capstone\\ci4\\public\\index.php')

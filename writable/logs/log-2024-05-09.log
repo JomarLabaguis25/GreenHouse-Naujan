@@ -1,0 +1,25 @@
+CRITICAL - 2024-05-09 09:38:41 --> Trying to access array offset on value of type null
+in APPPATH\Views\dashboard\AppliedFertilizer.php on line 707.
+ 1 APPPATH\Views\dashboard\AppliedFertilizer.php(707): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php', 707)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/AppliedFertilizer', [], true)
+ 5 APPPATH\Controllers\AdminController.php(90): view('dashboard/AppliedFertilizer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-09 09:40:11 --> file_get_contents(delete_info.php): Failed to open stream: No such file or directory
+in APPPATH\Views\dashboard\AppliedFertilizer.php on line 707.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(delete_info.php): Failed to open stream: No such file or directory', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php', 707)
+ 2 APPPATH\Views\dashboard\AppliedFertilizer.php(707): file_get_contents('delete_info.php')
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/AppliedFertilizer', [], true)
+ 6 APPPATH\Controllers\AdminController.php(90): view('dashboard/AppliedFertilizer', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 8 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')

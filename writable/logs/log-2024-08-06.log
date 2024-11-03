@@ -1,0 +1,357 @@
+CRITICAL - 2024-08-06 09:55:30 --> cURL error 6: Could not resolve host: api-ap1.pusher.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-ap1.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722938118&auth_version=1.0&body_md5=d54f4677d80226f24c6c5666bcadd676&auth_signature=32dc9b646729201cb7db344edd23af7dc3afc4334fd08dfd786e653d6c84c185
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-06 09:55:17\\",\\"soil_moisture\\":4095,\\"temperature\\":30.91,\\"humidity\\":79.8,\\"nutrient_level\\":50}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 09:55:43 --> cURL error 6: Could not resolve host: api-ap1.pusher.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-ap1.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722938132&auth_version=1.0&body_md5=03b418190c43043a52af943483efd7b5&auth_signature=9d7f9a30f8ff6bca91eb2d5722a27e1dde9d2bee672c17e777c91703fb365f18
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-06 09:55:32\\",\\"soil_moisture\\":4095,\\"temperature\\":30.91,\\"humidity\\":79.82,\\"nutrient_level\\":50}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 09:55:58 --> cURL error 6: Could not resolve host: api-ap1.pusher.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-ap1.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722938147&auth_version=1.0&body_md5=14f69e9843f4851fe081113f3c931083&auth_signature=d3585d4ae62acaac3646eee2c17d6d745a4add925df416629a8d1a35561c2b98
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-06 09:55:47\\",\\"soil_moisture\\":4095,\\"temperature\\":30.94,\\"humidity\\":79.8,\\"nutrient_level\\":50}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 09:56:10 --> cURL error 6: Could not resolve host: api-ap1.pusher.com (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-ap1.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722938158&auth_version=1.0&body_md5=5ba9a6ad4623147631a5f9a3373d08b4&auth_signature=a146b99719d29d957f8814a2872fd118d1386bf97eb0ef858a00d0be1c190789
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-06 09:55:58\\",\\"soil_moisture\\":4095,\\"temperature\\":30.97,\\"humidity\\":79.8,\\"nutrient_level\\":50}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 09:56:47 --> Undefined variable $liveData
+in APPPATH\Views\dashboard\dash.php on line 163.
+ 1 APPPATH\Views\dashboard\dash.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liveData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 5 APPPATH\Controllers\AdminController.php(58): view('dashboard/dash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 09:56:52 --> cURL error 28: Operation timed out after 30004 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-ap1.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722938182&auth_version=1.0&body_md5=9b19921970e6c0077f49b3e92b43257d&auth_signature=a08bb0f7a28cd23ba487524e8fe2a2316b97beb3ea77abc1b39a0ec72cd712c4
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-06 09:56:22\\",\\"soil_moisture\\":4095,\\"temperature\\":31.01,\\"humidity\\":79.84,\\"nutrient_level\\":50}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 09:57:22 --> cURL error 28: Connection timed out after 30010 milliseconds (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-ap1.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722938212&auth_version=1.0&body_md5=bac5fcbb9d3d22411bc57301b4ad0b77&auth_signature=f4a565141b37098e289824ff5bfeb29e8512c9e463992cc92b827edb11e45948
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-06 09:56:52\\",\\"soil_moisture\\":4095,\\"temperature\\":31.01,\\"humidity\\":79.87,\\"nutrient_level\\":50}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 09:57:52 --> cURL error 28: Connection timed out after 30011 milliseconds (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-ap1.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722938242&auth_version=1.0&body_md5=8ba82953e3c586c11ffb89e4bd008799&auth_signature=9746a032dac486c9a1c4398416069e135f9099a4fc49d278b0d89186faaa990b
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-06 09:57:22\\",\\"soil_moisture\\":4095,\\"temperature\\":30.91,\\"humidity\\":79.91,\\"nutrient_level\\":50}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 09:59:28 --> cURL error 28: Operation timed out after 30007 milliseconds with 0 bytes received (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-ap1.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722938338&auth_version=1.0&body_md5=ca43f2f98f7751ac193f45eff521a352&auth_signature=ba59423b2128d8e450a8ebae0e670cd623247058f576a8afb24a4d2be354b5d3
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-06 09:58:58\\",\\"soil_moisture\\":4095,\\"temperature\\":30.87,\\"humidity\\":79.97,\\"nutrient_level\\":50}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 09:59:53 --> cURL error 35: Recv failure: Connection was reset (see https://curl.haxx.se/libcurl/c/libcurl-errors.html) for https://api-ap1.pusher.com/apps/1844635/events?auth_key=d6df6d2a4ee7546463fc&auth_timestamp=1722938368&auth_version=1.0&body_md5=0cb5e1811639380e1d711bf18093d078&auth_signature=110ff99f44ab715a7ec1d49d346e24b19def36fd4b8a8c17555ea8768e00bf8b
+in VENDORPATH\pusher\pusher-php-server\src\Pusher.php on line 785.
+ 1 VENDORPATH\pusher\pusher-php-server\src\Pusher.php(441): Pusher\Pusher->post('/apps/1844635/events', '{"name":"new-measurement","data":"{\\"plot_id\\":1,\\"measurement_date\\":\\"2024-08-06 09:59:28\\",\\"soil_moisture\\":4095,\\"temperature\\":30.87,\\"humidity\\":79.97,\\"nutrient_level\\":50}","channel":"environmental-channel"}')
+ 2 APPPATH\Services\PusherService.php(28): Pusher\Pusher->trigger('environmental-channel', 'new-measurement', [...])
+ 3 APPPATH\Controllers\ApiController.php(48): App\Services\PusherService->trigger('environmental-channel', 'new-measurement', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:12:44 --> Undefined array key "PlantName"
+in APPPATH\Views\dashboard\History.php on line 156.
+ 1 APPPATH\Views\dashboard\History.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PlantName"', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php', 156)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/History', [], true)
+ 5 APPPATH\Controllers\AdminController.php(184): view('dashboard/History', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->History()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-06 10:22:45 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'greenhouse.environmental_measurements.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `plot_id...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `plot_id...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `plot_id...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `plot_id...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(69): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-06 10:22:45 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'greenhouse.environmental_measurements.temperature' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `plot_id`, MAX(measurement_date) as measurement_date, `temperature`, `humidity`, `nutrient_level`, `soil_moisture`
+FROM `environmental_measurements`
+GROUP BY `plot_id`
+ORDER BY `plot_id` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(69): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:23:26 --> You cannot use "getCompiledSelect()" in "App\Models\EnvironmentalMeasurementModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 889.
+ 1 SYSTEMPATH\Model.php(889): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\EnvironmentalMeasurementModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(869): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Controllers\AdminController.php(68): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:23:28 --> You cannot use "getCompiledSelect()" in "App\Models\EnvironmentalMeasurementModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 889.
+ 1 SYSTEMPATH\Model.php(889): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\EnvironmentalMeasurementModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(869): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Controllers\AdminController.php(68): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:26:48 --> You cannot use "getCompiledSelect()" in "App\Models\EnvironmentalMeasurementModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 889.
+ 1 SYSTEMPATH\Model.php(889): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\EnvironmentalMeasurementModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(869): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Controllers\AdminController.php(68): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:27:37 --> You cannot use "getCompiledSelect()" in "App\Models\EnvironmentalMeasurementModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 889.
+ 1 SYSTEMPATH\Model.php(889): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\EnvironmentalMeasurementModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(869): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Controllers\AdminController.php(68): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:27:38 --> You cannot use "getCompiledSelect()" in "App\Models\EnvironmentalMeasurementModel". This is a method of the Query Builder Class.
+in SYSTEMPATH\Model.php on line 889.
+ 1 SYSTEMPATH\Model.php(889): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\EnvironmentalMeasurementModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(869): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Controllers\AdminController.php(68): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-06 10:28:41 --> mysqli_sql_exception: Column 'plot_id' in field list is ambiguous in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `plot_id...', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `plot_id...')
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `plot_id...')
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `plot_id...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(69): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+#8 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#9 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2024-08-06 10:28:41 --> Column 'plot_id' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `plot_id`, `measurement_date`, `temperature`, `humidity`, `nutrient_level`, `soil_moisture`
+FROM `environmental_measurements`
+JOIN (SELECT plot_id, MAX(measurement_date) as latest_date FROM environmental_measurements GROUP BY plot_id) as latest_measurements ON `environmental_measurements`.`plot_id` = `latest_measurements`.`plot_id` AND `environmental_measurements`.`measurement_date` = `latest_measurements`.`latest_date`
+ORDER BY `environmental_measurements`.`plot_id` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\AdminController.php(69): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->charts()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:40:14 --> Undefined variable $liveData
+in APPPATH\Views\dashboard\dash.php on line 163.
+ 1 APPPATH\Views\dashboard\dash.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liveData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 5 APPPATH\Controllers\AdminController.php(58): view('dashboard/dash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:40:35 --> Undefined variable $liveData
+in APPPATH\Views\dashboard\dash.php on line 163.
+ 1 APPPATH\Views\dashboard\dash.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liveData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 5 APPPATH\Controllers\AdminController.php(58): view('dashboard/dash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:40:40 --> Undefined variable $liveData
+in APPPATH\Views\dashboard\dash.php on line 163.
+ 1 APPPATH\Views\dashboard\dash.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $liveData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php', 163)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 5 APPPATH\Controllers\AdminController.php(58): view('dashboard/dash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:40:56 --> Undefined array key "PlantName"
+in APPPATH\Views\dashboard\History.php on line 156.
+ 1 APPPATH\Views\dashboard\History.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "PlantName"', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php', 156)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\History.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/History', [], true)
+ 5 APPPATH\Controllers\AdminController.php(184): view('dashboard/History', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->History()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 10:41:04 --> Class "App\Models\PlantFertilizerModel" not found
+in APPPATH\Controllers\AdminController.php on line 190.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->Reports()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+ERROR - 2024-08-06 23:44:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'greenhouse', 3306, '', 0)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `environ...', Array, false)
+#4 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+#6 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#7 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\Capstone\ci4\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\Capstone\ci4\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\Capstone\ci4\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `environ...', Array, false)
+#3 C:\laragon\www\Capstone\ci4\app\Controllers\AdminController.php(66): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+#5 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#6 C:\laragon\www\Capstone\ci4\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\Capstone\ci4\public\index.php(86): CodeIgniter\CodeIgniter->run()
+#8 C:\laragon\www\Capstone\ci4\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2024-08-06 23:44:45 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `environmental_measurements`.`plot_id`, `environmental_measurements`.`measurement_date`, `environmental_measurements`.`temperature`, `environmental_measurements`.`humidity`, `environmental_measurements`.`nutrient_level`, `environmental_measurements`.`soil_moisture`
+FROM `environmental_measurements`
+INNER JOIN (SELECT `plot_id`, MAX(measurement_date) as max_measurement_date
+FROM `environmental_measurements`
+GROUP BY `plot_id`) as sub ON `environmental_measurements`.`plot_id` = `sub`.`plot_id` AND `environmental_measurements`.`measurement_date` = `sub`.`max_measurement_date`
+ORDER BY `environmental_measurements`.`plot_id` ASC', [], false)
+ 3 APPPATH\Controllers\AdminController.php(66): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 23:44:53 --> Undefined variable $soilMeasurementsData
+in APPPATH\Views\dashboard\dash.php on line 233.
+ 1 APPPATH\Views\dashboard\dash.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $soilMeasurementsData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php', 233)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 5 APPPATH\Controllers\AdminController.php(101): view('dashboard/dash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 23:44:55 --> Undefined variable $soilMeasurementsData
+in APPPATH\Views\dashboard\dash.php on line 233.
+ 1 APPPATH\Views\dashboard\dash.php(233): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $soilMeasurementsData', 'C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php', 233)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Capstone\\ci4\\app\\Views\\dashboard\\dash.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/dash', [], true)
+ 5 APPPATH\Controllers\AdminController.php(101): view('dashboard/dash', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->dash()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 23:52:28 --> Class "App\Controllers\DateTimeZone" not found
+in APPPATH\Controllers\AdminController.php on line 294.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->viewPlotDroughtMonitoring('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-08-06 23:52:43 --> Class "App\Controllers\DateTimeZone" not found
+in APPPATH\Controllers\AdminController.php on line 295.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->viewPlotDroughtMonitoring('1')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Capstone\\ci4\\public\\index.php')

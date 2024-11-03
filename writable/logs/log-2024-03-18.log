@@ -1,0 +1,64 @@
+CRITICAL - 2024-03-18 11:17:13 --> Undefined variable $infoModel
+in APPPATH\Controllers\AdminController.php on line 27.
+ 1 APPPATH\Controllers\AdminController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $infoModel', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\AdminController.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-18 11:18:08 --> Undefined variable $tableInfo
+in APPPATH\Views\dashboard\tables.php on line 162.
+ 1 APPPATH\Views\dashboard\tables.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tableInfo', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 162)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [...], true)
+ 5 APPPATH\Controllers\AdminController.php(29): view('dashboard/tables', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-18 11:43:30 --> syntax error, unexpected single-quoted string "HarvestStatus", expecting "]"
+in APPPATH\Controllers\PlantController.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\PlantController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PlantController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PlantController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PlantController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-18 11:43:34 --> syntax error, unexpected single-quoted string "HarvestStatus", expecting "]"
+in APPPATH\Controllers\PlantController.php on line 70.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\PlantController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PlantController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PlantController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\PlantController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-18 11:46:32 --> Undefined array key "harvestStatus"
+in APPPATH\Views\dashboard\tables.php on line 197.
+ 1 APPPATH\Views\dashboard\tables.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harvestStatus"', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 197)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(31): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-03-18 11:48:23 --> Undefined array key "harvestStatus"
+in APPPATH\Views\dashboard\tables.php on line 197.
+ 1 APPPATH\Views\dashboard\tables.php(197): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harvestStatus"', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php', 197)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\tables.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/tables', [], true)
+ 5 APPPATH\Controllers\AdminController.php(31): view('dashboard/tables', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->tables()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')

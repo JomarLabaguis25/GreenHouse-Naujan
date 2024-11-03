@@ -1,0 +1,79 @@
+CRITICAL - 2024-05-04 08:17:25 --> Cannot call constructor
+in APPPATH\Controllers\PlantController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\PlantController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-04 08:17:27 --> Cannot call constructor
+in APPPATH\Controllers\PlantController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\PlantController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-04 08:20:12 --> Cannot call constructor
+in APPPATH\Controllers\PlantController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\PlantController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-04 08:20:35 --> Cannot call constructor
+in APPPATH\Controllers\PlantController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\PlantController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-04 08:20:36 --> Cannot call constructor
+in APPPATH\Controllers\PlantController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(891): App\Controllers\PlantController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-04 08:25:47 --> Undefined property: App\Controllers\PlantController::$input
+in APPPATH\Controllers\PlantController.php on line 13.
+ 1 APPPATH\Controllers\PlantController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PlantController::$input', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\PlantController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->insertFertilizer()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-04 08:25:51 --> Undefined property: App\Controllers\PlantController::$input
+in APPPATH\Controllers\PlantController.php on line 13.
+ 1 APPPATH\Controllers\PlantController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PlantController::$input', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\PlantController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->insertFertilizer()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-04 08:27:55 --> Undefined property: App\Controllers\PlantController::$input
+in APPPATH\Controllers\PlantController.php on line 13.
+ 1 APPPATH\Controllers\PlantController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PlantController::$input', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\PlantController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->insertFertilizer()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-04 08:27:57 --> Undefined property: App\Controllers\PlantController::$input
+in APPPATH\Controllers\PlantController.php on line 13.
+ 1 APPPATH\Controllers\PlantController.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PlantController::$input', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Controllers\\PlantController.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\PlantController->insertFertilizer()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PlantController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
+CRITICAL - 2024-05-04 23:04:51 --> Undefined variable $fertilizer_rows
+in APPPATH\Views\dashboard\AppliedFertilizer.php on line 208.
+ 1 APPPATH\Views\dashboard\AppliedFertilizer.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fertilizer_rows', 'C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php', 208)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\app\\Views\\dashboard\\AppliedFertilizer.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('dashboard/AppliedFertilizer', [], true)
+ 5 APPPATH\Controllers\AdminController.php(90): view('dashboard/AppliedFertilizer', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->AppliedFertilizer()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Acer\\laragon\\www\\capstone\\ci4\\public\\index.php')
