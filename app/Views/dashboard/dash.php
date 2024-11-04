@@ -215,12 +215,7 @@
                       <span class="user-name text-bold-700 ml-1"><?= $loggedInUser['fullName'] ?? 'Admin'; ?></span>
                     </span>
                   </a>
-                  <a class="dropdown-item" href="editprofile"><i class="ft-mail"></i>
 
-                    Edit Profile</a>
-                  <a class="dropdown-item" href="#"><i class="ft-mail"></i> My Inbox</a>
-                  <a class="dropdown-item" href="#"><i class="ft-check-square"></i> Task</a>
-                  <a class="dropdown-item" href="#"><i class="ft-message-square"></i> Chats</a>
                   <a class="dropdown-item" href="<?= base_url('auth/logout') ?>"><i class="ft-power"></i> Logout</a>
                 </div>
               </div>
