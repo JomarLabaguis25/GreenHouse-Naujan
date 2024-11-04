@@ -67,7 +67,7 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
-                                    <h1 class="display-1 text-white mb-5 animated slideInDown">Naujan Mini GreenHouse</h1>
+                                    <h1 class="display-1 text-white mb-5 animated slideInDown"> Mini GreenHouse Naujan</h1>
                                     <a href="" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
                                 </div>
                             </div>
