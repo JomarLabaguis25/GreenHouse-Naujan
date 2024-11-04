@@ -89,12 +89,12 @@
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class="nav-item"><a href="<?= base_url('dash'); ?>"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a></li>
                 <li class="nav-item"><a href="<?= base_url('charts'); ?>"><i class="ft-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a></li>
-                <li class="nav-item"><a href="tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a>
+                <li class="nav-item"><a href="/tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a>
                 </li>
                 <li class="nav-item"><a href="#"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Drought Monitoring</span></a></li>
                 <li class="active"><a href="<?= base_url('nutrients'); ?>"><i class="ft-box"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a></li>
                 <li class="nav-item"><a href="<?= base_url('sensors'); ?>"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Sensors</span></a></li>
-                <li class=" nav-item"><a href="MeasurementHistory"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Measurement H</span></a>
+                <li class=" nav-item"><a href="/MeasurementHistory"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Measurement H</span></a>
                 </li>
                 <li class="nav-item"><a href="<?= base_url('History'); ?>"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Plant History</span></a></li>
                 <li class="nav-item"><a href="<?= base_url('AppliedFertilizer'); ?>"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a></li>
