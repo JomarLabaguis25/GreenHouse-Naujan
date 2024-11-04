@@ -204,7 +204,7 @@
             </li>
             <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail"> </i></a>
               <div class="dropdown-menu dropdown-menu-right">
-                <div class="arrow_box_right"><a class="dropdown-item" href="alerts"><i class="ft-book"></i> Alerts</a><a class="dropdown-item" href="#"><i class="ft-bookmark"></i> Read Later</a><a class="dropdown-item" href="#"><i class="ft-check-square"></i> Mark all Read </a></div>
+                <div class="arrow_box_right"><a class="dropdown-item" href="/alerts"><i class="ft-book"></i> Alerts</a><a class="dropdown-item" href="#"><i class="ft-bookmark"></i> Read Later</a><a class="dropdown-item" href="#"><i class="ft-check-square"></i> Mark all Read </a></div>
               </div>
             </li>
             <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"> <span class="avatar avatar-online"><img src="<?= base_url('naujanLogo.png'); ?>" alt="avatar"><i></i></span></a>
