@@ -8,7 +8,7 @@
     <meta name="description" content="Chameleon Admin is a modern Bootstrap 4 webapp & dashboard HTML template with a large number of components, elegant design, clean and organized code.">
     <meta name="keywords" content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
     <meta name="author" content="ThemeSelect">
-    <title>Measurement History - Naujan GreenHouse</title>
+    <title>Greenhouse Naujan</title>
     <link rel="icon" type="image/x-icon" href="<?= base_url('naujanLogo.png') ?>">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="admin/theme-assets/css/vendors.css">
@@ -218,11 +218,7 @@
                                 </div>
 
                                 <!-- Footer -->
-                                <footer class="footer footer-static footer-light navbar-border navbar-shadow">
-                                    <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2">
-                                        <span class="float-md-left d-block d-md-inline-block">2018 &copy; Copyright</span>
-                                    </div>
-                                </footer>
+                                
 
                                 <!-- Vendor JS -->
                                 <script src="admin/theme-assets/vendors/js/vendors.min.js"></script>

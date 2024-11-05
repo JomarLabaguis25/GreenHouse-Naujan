@@ -8,7 +8,7 @@
   <meta name="description" content="Chameleon Admin is a modern Bootstrap 4 webapp &amp; admin dashboard html template with a large number of components, elegant design, clean and organized code.">
   <meta name="keywords" content="admin template, Chameleon admin template, dashboard template, gradient admin template, responsive admin template, webapp, eCommerce dashboard, analytic dashboard">
   <meta name="author" content="ThemeSelect">
-  <title>Dashboard</title>
+  <title>Greenhouse Naujan</title>
   <link rel="apple-touch-icon" href="admin/theme-assets/images/ico/apple-icon-120.png">
   <link rel="shortcut icon" type="image/x-icon" href="admin/theme-assets/images/ico/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i%7CComfortaa:300,400,700" rel="stylesheet">
@@ -174,16 +174,6 @@
   </div>
   <!-- ////////////////////////////////////////////////////////////////////////////-->
 
-
-  <footer class="footer footer-static footer-light navbar-border navbar-shadow">
-    <div class="clearfix blue-grey lighten-2 text-sm-center mb-0 px-2"><span class="float-md-left d-block d-md-inline-block">2018 &copy; Copyright <a class="text-bold-800 grey darken-2" href="https://themeselection.com" target="_blank">ThemeSelection</a></span>
-      <ul class="list-inline float-md-right d-block d-md-inline-blockd-none d-lg-block mb-0">
-        <li class="list-inline-item"><a class="my-1" href="https://themeselection.com/" target="_blank"> More themes</a></li>
-        <li class="list-inline-item"><a class="my-1" href="https://themeselection.com/support" target="_blank"> Support</a></li>
-        <li class="list-inline-item"><a class="my-1" href="https://themeselection.com/products/chameleon-admin-modern-bootstrap-webapp-dashboard-html-template-ui-kit/" target="_blank"> Purchase</a></li>
-      </ul>
-    </div>
-  </footer>
 
   <!-- BEGIN VENDOR JS-->
   <script src="admin/theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
