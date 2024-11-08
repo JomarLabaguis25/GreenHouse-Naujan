@@ -280,23 +280,33 @@ class AdminController extends BaseController
         // Fetch data for planted plants (limit results for performance)
         $db = \Config\Database::connect();
         $plantsQuery = $db->query("
-            SELECT plants.common_name as PlantName, COUNT(planted_plants.id) AS plant_count
-            FROM planted_plants
-            JOIN plants ON planted_plants.plant_id = plants.id
-            GROUP BY plants.common_name
-            LIMIT 50
-        ");
+        SELECT 
+            plants.common_name AS PlantName, 
+            COUNT(planted_plants.id) AS record_count,
+            SUM(planted_plants.quantity) AS plant_count  
+        FROM planted_plants
+        JOIN plants ON planted_plants.plant_id = plants.id
+        GROUP BY plants.common_name
+        LIMIT 50
+    ");
         $plantsData = $plantsQuery->getResultArray();
+
+
 
         // Fetch data for harvested plants (limit results for performance)
         $harvestedPlantsQuery = $db->query("
-            SELECT plants.common_name as PlantName, COUNT(harvested_plants.id) AS plant_count
-            FROM harvested_plants
-            JOIN plants ON harvested_plants.plant_id = plants.id
-            GROUP BY plants.common_name
-            LIMIT 50
-        ");
+        SELECT 
+            plants.common_name AS PlantName, 
+            COUNT(harvested_plants.id) AS plant_count, 
+            SUM(harvested_plants.quantity_harvested) AS total_quantity_harvested,
+            SUM(harvested_plants.quantity_destroyed) AS total_quantity_destroyed
+        FROM harvested_plants
+        JOIN plants ON harvested_plants.plant_id = plants.id
+        GROUP BY plants.common_name
+        LIMIT 50
+    ");
         $harvestedPlantsData = $harvestedPlantsQuery->getResultArray();
+
 
         // Pass the limited and optimized data to the view
         $data = [

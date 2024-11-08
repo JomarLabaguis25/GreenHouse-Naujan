@@ -136,7 +136,7 @@
                   <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                   <img class="" src="<?= $plot['image']; ?>" alt="Card image cap">
                   <div class="card-body">
-                    <p class="card-text"><?= $plot['description']; ?></p>
+
                   </div>
                   <div id="plot<?= $plot['id']; ?>"></div>
                 </div>

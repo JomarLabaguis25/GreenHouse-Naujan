@@ -382,7 +382,7 @@
                                 <div id="plantInfoModal" class="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); text-align: center;">
                                     <!-- Modal content for displaying plant information -->
                                     <div class="modal-content" style="background-color: #fefefe; padding: 20px; border: 1px solid #888; border-radius: 10px; width: 50%; margin: 15% auto;">
-                                        <span class="close" style="position: absolute; top: 10px; right: 10px; cursor: pointer;" onclick="closePlantModal()">&times;</span>
+                                        <span class="close" style="position: absolute; top: 10px; right: 10px; cursor: pointer;" onclick="closePlantModal11()">&times;</span>
                                         <h2>Plant Information</h2>
                                         <div id="plantInfo"></div>
                                     </div>
@@ -512,6 +512,24 @@
                     </div>
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                     <script>
+                        function openPlantInfoModal() {
+                            document.getElementById('plantInfoModal').style.display = 'block';
+                        }
+
+                        function closePlantModal11() {
+                            document.getElementById('plantInfoModal').style.display = 'none';
+                        }
+
+                        // Optional: Close the modal when clicking outside of it
+                        window.onclick = function(event) {
+                            var modal = document.getElementById('plantInfoModal');
+                            if (event.target == modal) {
+                                modal.style.display = 'none';
+                            }
+                        };
+                    </script>
+
+                    <script>
                         document.addEventListener('DOMContentLoaded', function() {
                             const plantNameInput = document.getElementById('common_name');
                             const showScientificNamesBtn = document.getElementById('showScientificNames');
@@ -593,10 +611,7 @@
                             <p><strong>Plant Age:</strong> ${plantAge}</p>
                             <p><strong>Quantity:</strong> ${quantity}</p>
                         </div>
-                        <div style="flex: 1;">
-                            <img src="${imageUrl}" style="max-width: 100%; height: auto;">
-                            <img src="admin/theme-assets/images/carousel/images(3).jpg" style="max-width: 100%; height: auto;">
-                        </div>
+                     
                     </div>
                 `;
                             document.getElementById("plantInfo").innerHTML = plantInfoHTML;
@@ -733,7 +748,7 @@
         </div>
     </div>
     <!-- ////////////////////////////////////////////////////////////////////////////-->
-    
+
     <!-- BEGIN VENDOR JS-->
     <script src="admin/theme-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
