@@ -118,13 +118,13 @@
             <div class="content-body">
                 <div class="row">
                     <div class="col-12">
-                        <div class="card">
-                            <img class="img-fluid" src="<?= base_url($plot['image']); ?>" alt="Plot image">
+                        <div class="card text-center ">
+                            <img class="img-fluid  w-45 pt-3 mx-auto d-block" src="<?= base_url($plot['image']); ?>" alt="Plot image">
                             <div class="card-body">
                                 <h4 class="card-title"><?= $plot['plot_name']; ?></h4>
-                                <p><?= $plot['description']; ?></p>
                             </div>
                         </div>
+
                     </div>
                 </div>
 

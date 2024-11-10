@@ -370,12 +370,11 @@
             </div>
             <section id="chartjs-pie-charts">
                 <div class="row">
-                    <!-- Simple Pie Chart -->
+                    <!-- Simple Pie Chart for Planted Plants -->
                     <div class="col-md-6 col-sm-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Number of Planted Plants</h4>
-                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
                                         <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
@@ -398,7 +397,7 @@
                                             data: {
                                                 labels: plantsData.map(data => data.PlantName),
                                                 datasets: [{
-                                                    label: 'Number of Plants',
+                                                    label: 'Planted Quantity',
                                                     data: plantsData.map(data => data.plant_count),
                                                     backgroundColor: [
                                                         'rgba(255, 99, 132, 0.2)',
@@ -429,18 +428,17 @@
                                             }
                                         });
                                     </script>
-                                    <p>Number of planted plants: <?php echo array_sum(array_column($plantsData, 'plant_count')); ?></p>
+                                    <p>Total planted quantity: <?php echo array_sum(array_column($plantsData, 'plant_count')); ?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Simple Doughnut Chart -->
+                    <!-- Simple Doughnut Chart for Harvested Plants -->
                     <div class="col-md-6 col-sm-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">Number of Harvested Plants</h4>
-                                <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
                                         <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
@@ -463,8 +461,8 @@
                                             data: {
                                                 labels: harvestedPlantsData.map(data => data.PlantName),
                                                 datasets: [{
-                                                    label: 'Number of Harvested Plants',
-                                                    data: harvestedPlantsData.map(data => data.plant_count),
+                                                    label: 'Harvested Quantity',
+                                                    data: harvestedPlantsData.map(data => parseInt(data.total_quantity_harvested) - parseInt(data.total_quantity_destroyed)),
                                                     backgroundColor: [
                                                         'rgba(255, 99, 132, 0.2)',
                                                         'rgba(54, 162, 235, 0.2)',
@@ -494,11 +492,14 @@
                                             }
                                         });
                                     </script>
-                                    <p>Number of harvested plants: <?php echo array_sum(array_column($harvestedPlantsData, 'plant_count')); ?></p>
+                                    <p>Total harvested quantity: <?php echo array_sum(array_map(function ($data) {
+                                                                        return $data['total_quantity_harvested'] - $data['total_quantity_destroyed'];
+                                                                    }, $harvestedPlantsData)); ?></p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
             <!-- // Pie charts section end -->

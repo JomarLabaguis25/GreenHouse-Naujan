@@ -134,10 +134,10 @@
                                 <div style="clear: both;"></div> <!-- Clear float -->
                             </div>
                             <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
-                            <img class="img-fluid" src="<?= base_url($plot['image']); ?>" alt="Card image cap">
+                            <img class="img-fluid w-40 mx-auto d-block " src="<?= base_url($plot['image']); ?>" alt="Card image cap">
 
                             <div class="card-body">
-                                <p class="card-text"><?= $plot['description']; ?></p>
+
                             </div>
                             <div class="card-body text-center">
                                 <p class="card-text">Morning Data</p>
