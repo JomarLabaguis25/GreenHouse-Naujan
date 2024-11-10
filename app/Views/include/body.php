@@ -384,7 +384,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <img class="img-fluid" src="team-1.jpg" alt="">
                         <div class="team-text">
                             <h4 class="mb-0">Myko Piolo G. Feudo</h4>
                             <p class="text-primary">Web Developer</p>
@@ -398,7 +398,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <img class="img-fluid" src="team-2.jpg" alt="">
                         <div class="team-text">
                             <h4 class="mb-0">Jomar L. Mendoza</h4>
                             <p class="text-primary">Web Developer</p>
@@ -443,14 +443,14 @@
                 <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-1.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <img class="img-fluid rounded mb-3" src="testimonial-1.jpg" alt="">
+                            <p class="fs-5">"This website has made managing our greenhouse so much easier! It’s user-friendly, efficient, and helps us stay organized.</p>
                             <h4>Raquelita Umali</h4>
                             <span>Head of Municipal Agricultural Office</span>
                         </div>
                         <div class="testimonial-item">
-                            <img class="img-fluid rounded mb-3" src="img/testimonial-2.jpg" alt="">
-                            <p class="fs-5">Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat.</p>
+                            <img class="img-fluid rounded mb-3" src="testimonial-2.jpg" alt="">
+                            <p class="fs-5">"We're extremely satisfied with this greenhouse management website! It’s simple to use, effective, and has greatly improved our operations. A great tool for managing everything in one place!"</p>
                             <h4>Marlon Manalo</h4>
                             <span>Engineer</span>
                         </div>
