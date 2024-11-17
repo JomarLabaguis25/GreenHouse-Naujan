@@ -121,6 +121,9 @@
             <div class="content-body">
                 <div class="row">
                     <div class="col-12">
+
+
+
                         <div class="card">
                             <div class="card-header">
                                 <h4 class="card-title">List of Planted Plants</h4>
@@ -142,6 +145,12 @@
                                     <div class="card-content">
                                         <div class="card-body">
                                             <p class="card-text"><?php echo $table['table_info']; ?></p>
+                                            <div class="mb-3">
+                                                <p>If you want to add a new type of plant to be planted, add it here first:</p>
+                                                <a href="/plantinfo" class="">
+                                                    Go to Plants Info
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
@@ -209,7 +218,7 @@
 
                                         <?php endif; ?>
                                     </tbody>
-                                    <button onclick="openModal()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 5px; float: right;">Add Plant</button>
+                                    <button onclick="openModal()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 5px; float: right;">Plant Plant</button>
 
                                 </table>
 
@@ -280,7 +289,7 @@
                                     <!-- Modal content for adding plant -->
                                     <div class="modal-content" style="background-color: #fefefe; padding: 20px; border: 1px solid #888; border-radius: 10px; width: 50%; margin: 15% auto;">
                                         <span class="close" style="position: absolute; top: 10px; right: 10px; cursor: pointer;" onclick="closeModal()">&times;</span>
-                                        <h2>Add Plant</h2>
+                                        <h2>Plant Plant</h2>
                                         <form id="addPlantForm" action="<?php echo base_url('plants/insertPlant'); ?>" method="post">
                                             <label for="common_name">Plant Name:</label><br>
                                             <div style="position: relative; display: inline-block; width: 80%;">
