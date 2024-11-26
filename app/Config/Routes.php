@@ -51,6 +51,10 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->get('alerts', 'AdminController::alerts');
     $routes->get('History', 'AdminController::History');
     $routes->get('Reports', 'AdminController::Reports');
+    $routes->get('plantinfo', 'AdminController::plantinfo');
+    $routes->post('/plants/add', 'AdminController::addPlant');
+    $routes->post('/plants/edit/(:num)', 'AdminController::editPlant/$1');
+
     $routes->get('MeasurementHistory', 'AdminController::MeasurementHistory');
     // $routes->post('insertFertilizer', 'PlantController::insertFertilizer');
     $routes->get('AppliedFertilizer', 'AdminController::AppliedFertilizer');

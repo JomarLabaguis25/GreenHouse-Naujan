@@ -881,4 +881,55 @@ class AdminController extends BaseController
 
         return view('dashboard/measurement_history', $data);
     }
+    public function plantinfo()
+    {
+        $plantid = $this->request->getPost('plantId');
+        $plantModel = new PlantModel();
+        $data['plant'] = $plantModel->find($plantid);
+        return view('dashboard/plantinfo', $data);
+    }
+
+    public function addPlant()
+    {
+        $plantModel = new PlantModel();
+
+        $data = [
+            'common_name'      => $this->request->getPost('common_name'),
+            'scientific_name'  => $this->request->getPost('scientific_name'),
+            'plant_type'       => $this->request->getPost('plant_type'),
+            'plant_desc'       => $this->request->getPost('plant_desc'),
+            'water_capacity'   => $this->request->getPost('water_capacity'),
+            'soil_type'        => $this->request->getPost('soil_type'),
+            'days_to_harvest'  => $this->request->getPost('days_to_harvest'),
+
+        ];
+
+        if ($plantModel->insert($data)) {
+            return redirect()->to('/plantinfo')->with('success', 'Plant added successfully');
+        } else {
+            return redirect()->to('/plantinfo')->with('error', 'Failed to add plant');
+        }
+    }
+
+    public function editPlant($id)
+    {
+        $plantModel = new PlantModel();
+
+        $data = [
+            'common_name'      => $this->request->getPost('common_name'),
+            'scientific_name'  => $this->request->getPost('scientific_name'),
+            'plant_type'       => $this->request->getPost('plant_type'),
+            'plant_desc'       => $this->request->getPost('plant_desc'),
+            'water_capacity'   => $this->request->getPost('water_capacity'),
+            'soil_type'        => $this->request->getPost('soil_type'),
+            'days_to_harvest'  => $this->request->getPost('days_to_harvest'),
+
+        ];
+
+        if ($plantModel->update($id, $data)) {
+            return redirect()->to('/plantinfo')->with('success', 'Plant added successfully');
+        } else {
+            return redirect()->to('/plantinfo')->with('error', 'Failed to add plant');
+        }
+    }
 }
