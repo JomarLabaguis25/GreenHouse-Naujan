@@ -46,7 +46,7 @@
             <div class="col-lg-7 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <span class="fa fa-phone-alt me-2"></span>
-                    <span>+012 345 6789</span>
+                    <span>09102099689</span>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <span class="far fa-envelope me-2"></span>
@@ -177,7 +177,7 @@
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="team-1.jpg" alt="">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
                         <div class="team-text">
                             <h4 class="mb-0">Myko Piolo G. Feudo</h4>
                             <p class="text-primary">Web Developer</p>
@@ -191,7 +191,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded">
-                        <img class="img-fluid" src="team-2.jpg" alt="">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
                         <div class="team-text">
                             <h4 class="mb-0">Jomar L. Mendoza</h4>
                             <p class="text-primary">Web Developer</p>
