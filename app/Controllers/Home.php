@@ -53,8 +53,5 @@ class Home extends BaseController
     {
         return view('404');
     }
-    // public function dash()
-    // {
-    //     return view('dashboard/dash'); 
-    // }
+
 }

@@ -76,25 +76,24 @@
                 </li>
                 <li class=" active"><a href="tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a>
                 </li>
-                <li class=" nav-item"><a href="cards"><i class="ft-layers"></i><span class="menu-title" data-i18n="">DM</span></a>
+                <!-- <li class=" nav-item"><a href="cards"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Drought Monitoring</span></a>
                 </li>
-                <li class=" nav-item"><a href="nutrients"><i class="ft-box"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a>
-                <li class=" nav-item"><a href="sensors"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Sensors</span></a>
-                </li>
-                </li>
-                <li class=" nav-item"><a href="MeasurementHistory"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Measurement H</span></a>
+                <li class=" nav-item"><a href="nutrients"><i class="ft-box"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a>-->
+                <li class=" nav-item"><a href="sensors"><i class="ft-radio"></i><span class="menu-title" data-i18n="">Sensors</span></a>
                 </li>
                 </li>
-                <li class=" nav-item"><a href="History"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Plant History</span></a>
+                <li class=" nav-item"><a href="MeasurementHistory"><i class="ft-bar-chart"></i><span class="menu-title" data-i18n="">Measurement H</span></a>
                 </li>
-                <li class=" nav-item"><a href="AppliedFertilizer"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a>
+                </li>
+                <li class=" nav-item"><a href="History"><i class="ft-book"></i><span class="menu-title" data-i18n="">Plant History</span></a>
+                </li>
+                <li class=" nav-item"><a href="AppliedFertilizer"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a>
                 </li>
                 <li class=" nav-item"><a href="Reports"><i class="ft-layout"></i><span class="menu-title" data-i18n="">Over All Reports</span></a>
                 </li>
-                <!-- <li class=" nav-item"><a href="https://themeselection.com/demo/chameleon-admin-template/documentation"><i class="ft-book"></i><span class="menu-title" data-i18n="">Documentation</span></a> -->
-                </li>
+                 
             </ul>
-        </div><a class="btn btn-danger btn-block btn-glow btn-upgrade-pro mx-1" href="https://themeselection.com/products/chameleon-admin-modern-bootstrap-webapp-dashboard-html-template-ui-kit/" target="_blank"></a>
+        </div>
         <div class="navigation-background"></div>
     </div>
 
@@ -198,27 +197,36 @@
                                                         <button onclick="openHarvestModal(<?= $planted['id'] ?>, '<?= $planted['common_name'] ?>', <?= $planted['quantity'] ?>)" class="btn btn-success btn-sm">Harvest</button>
                                                     </td>
                                                     <td>
-                                                        <a href="#" onclick="updateEditForm(
-                '<?php echo htmlspecialchars($planted['common_name']); ?>',
-                '<?php echo htmlspecialchars($planted['scientific_name']); ?>',
-                '<?php echo htmlspecialchars($planted['plant_type']); ?>',
-                '<?php echo htmlspecialchars($planted['plant_desc']); ?>',
-                '<?php echo htmlspecialchars($planted['water_capacity']); ?>',
-                '<?php echo htmlspecialchars($planted['soil_type']); ?>',
-                '<?php echo htmlspecialchars($planted['days_to_harvest']); ?>',
-                '<?php echo htmlspecialchars($planted['harvest_status']); ?>',
-                '<?php echo htmlspecialchars($planted['plant_age']); ?>',
-                '<?php echo htmlspecialchars($planted['quantity']); ?>',
-                '<?php echo $planted['id']; ?>' // Pass the planted_plant_id
-            )" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#editPlantModal">Edit</a>
-                                                        <button onclick="deleteRecord(<?= $planted['id'] ?>)" class="btn btn-danger btn-sm">Delete</button>
-                                                    </td>
+  <a href="#" onclick="updateEditForm(
+          '<?php echo htmlspecialchars($planted['common_name']); ?>',
+          '<?php echo htmlspecialchars($planted['scientific_name']); ?>',
+          '<?php echo htmlspecialchars($planted['plant_type']); ?>',
+          '<?php echo htmlspecialchars($planted['plant_desc']); ?>',
+          '<?php echo htmlspecialchars($planted['water_capacity']); ?>',
+          '<?php echo htmlspecialchars($planted['soil_type']); ?>',
+          '<?php echo htmlspecialchars($planted['days_to_harvest']); ?>',
+          '<?php echo htmlspecialchars($planted['harvest_status']); ?>',
+          '<?php echo htmlspecialchars($planted['plant_age']); ?>',
+          '<?php echo htmlspecialchars($planted['quantity']); ?>',
+          '<?php echo $planted['id']; ?>'
+      )" 
+      class="btn btn-primary btn-sm" 
+      data-toggle="modal" 
+      data-target="#editPlantModal"
+      style="width: 80px; height: 25px; padding: 5px 0; text-align: center; margin-bottom: 5px;">Edit</a>
+  <button 
+      onclick="deleteRecord(<?= $planted['id'] ?>)" 
+      class="btn btn-danger btn-sm" 
+      style="width: 80px; height: 25px; padding: 5px 0; text-align: center;">Delete</button>
+</td>
+
+
                                                 </tr>
                                             <?php endforeach; ?>
 
                                         <?php endif; ?>
                                     </tbody>
-                                    <button onclick="openModal()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 5px; float: right;">Plant Plant</button>
+                                    <button onclick="openModal()" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; cursor: pointer; border-radius: 5px; float: right;">Add Plant</button>
 
                                 </table>
 
@@ -289,12 +297,14 @@
                                     <!-- Modal content for adding plant -->
                                     <div class="modal-content" style="background-color: #fefefe; padding: 20px; border: 1px solid #888; border-radius: 10px; width: 50%; margin: 15% auto;">
                                         <span class="close" style="position: absolute; top: 10px; right: 10px; cursor: pointer;" onclick="closeModal()">&times;</span>
-                                        <h2>Plant Plant</h2>
+                                        <h2>Add Plant</h2>
                                         <form id="addPlantForm" action="<?php echo base_url('plants/insertPlant'); ?>" method="post">
                                             <label for="common_name">Plant Name:</label><br>
                                             <div style="position: relative; display: inline-block; width: 80%;">
-                                                <input type="text" id="common_name" name="common_name" required style="width: calc(100% - 30px); padding: 10px; margin-bottom: 10px;">
-                                                <button type="button" id="showScientificNames" style="position: absolute; right: 0; top: 0; padding: 5px; background-color: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;">Scientific Name</button>
+                                            <div style="position: relative; width: 100%;">
+                                            <input type="text" id="common_name" name="common_name" required style="width: calc(100% - 100px); padding: 10px; margin-bottom: 10px;">
+                                            <button type="button" id="showScientificNames" style="position: absolute; right: 0; top: 0; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer; height: 80%;">Scientific Name</button>
+                                        </div>
                                                 <div id="scientificNames" style="display: none; position: absolute; top: 100%; left: 0; background-color: #f9f9f9; min-width: 200px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border: 1px solid #ccc; border-radius: 5px; z-index: 1;">
                                                     <?php
                                                     // Assuming you have established a database connection
@@ -332,9 +342,9 @@
                                             </div><br>
                                             <label for="plant_type">Plant Type:</label><br>
                                             <div style="position: relative; display: inline-block; width: 80%;">
-                                                <input type="text" id="plant_type" name="plant_type" required style="width: 80%; padding: 10px; margin-bottom: 10px;">
-                                                <button type="button" id="ShowplantType" style="position: absolute; right: 0; top: 0; padding: 5px; background-color: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;">Plant Types</button>
-                                                <div id="plantTypeShow" style="display: none; position: absolute; top: 100%; left: 0; background-color: #f9f9f9; min-width: 200px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border: 1px solid #ccc; border-radius: 5px; z-index: 1;">
+                                            <input type="text" id="plant_type" name="plant_type" required style="width: 100%; padding: 10px; margin-bottom: 10px;">
+                                            <button type="button" id="ShowplantType" style="position: absolute; right: 0; top: 0; height: 80%; padding: 5px; background-color: #4CAF50; color: white; border: none; border-radius: 3px; cursor: pointer;">Plant Types</button>
+                                            <div id="plantTypeShow" style="display: none; position: absolute; top: 100%; left: 0; background-color: #f9f9f9; min-width: 200px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border: 1px solid #ccc; border-radius: 5px; z-index: 1;">
                                                     <?php
                                                     // Assuming you have established a database connection
                                                     $db_connection2 = new mysqli("localhost", "root", "", "greenhouse");

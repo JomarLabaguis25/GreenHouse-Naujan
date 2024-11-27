@@ -76,24 +76,24 @@
                 </li>
                 <li class=" nav-item"><a href="/tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a>
                 </li>
-                <li class=" nav-item"><a href="/cards"><i class="ft-layers"></i><span class="menu-title" data-i18n="">DM</span></a>
+                <!-- <li class=" nav-item"><a href="/cards"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Drought Monitoring</span></a>
                 </li>
-                <li class=" nav-item"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a>
+                <li class=" nav-item"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a> -->
                 <li class=" active"><a href="/sensors"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Sensors</span></a>
                 </li>
-                <li class=" nav-item"><a href="/MeasurementHistory"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Measurement H</span></a>
+                <li class=" nav-item"><a href="/MeasurementHistory"><i class="ft-bar-chart"></i><span class="menu-title" data-i18n="">Measurement</span></a>
                 </li>
                 </li>
-                <li class=" nav-item"><a href="/History"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Plant History</span></a>
+                <li class=" nav-item"><a href="/History"><i class="ft-book"></i><span class="menu-title" data-i18n="">Plant History</span></a>
                 </li>
-                <li class=" nav-item"><a href="/AppliedFertilizer"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a>
+                <li class=" nav-item"><a href="/AppliedFertilizer"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a>
                 </li>
                 <li class=" nav-item"><a href="/Reports"><i class="ft-layout"></i><span class="menu-title" data-i18n="">Over All Reports</span></a>
                 </li>
                 <!-- <li class=" nav-item"><a href="https://themeselection.com/demo/chameleon-admin-template/documentation"><i class="ft-book"></i><span class="menu-title" data-i18n="">Documentation</span></a> -->
                 </li>
             </ul>
-        </div><a class="btn btn-danger btn-block btn-glow btn-upgrade-pro mx-1" href="https://themeselection.com/products/chameleon-admin-modern-bootstrap-webapp-dashboard-html-template-ui-kit/" target="_blank"></a>
+        </div>
         <div class="navigation-background"></div>
     </div>
 

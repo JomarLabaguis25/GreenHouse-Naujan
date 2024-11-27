@@ -79,7 +79,7 @@
         </li>
         <li class="nav-item"><a href="/tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a>
         </li>
-        <li class="nav-item"><a href="/cards"><i class="ft-layers"></i><span class="menu-title" data-i18n="">DM</span></a>
+        <li class="nav-item"><a href="/cards"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Drought Monitoring</span></a>
         </li>
         <li class="active"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a>
         <li class="nav-item"><a href="/sensors"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Sensors</span></a>
