@@ -52,20 +52,30 @@
             </ul>
         </div>
         <div class="main-menu-content">
-  <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-    <li class="active"><a href="/dash"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a></li>
-    <li class="nav-item" id="charts-dropdown" style="position: relative;"><a href="/charts" style="display: block;"><i class="ft-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a></li>
-    <li class="nav-item"><a href="/tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a></li>
-    <li class="nav-item" style="display: flex; align-items: center; justify-content: space-between;"><a href="/cards" style="display: block; width: 100%;"><i class="ft-cloud-drizzle"></i><span class="menu-title" data-i18n="">DM</span></a></li>
-    <li class="nav-item"><a href="/nutrients"><i class="fa fa-leaf"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a></li>
-    <li class="nav-item"><a href="/sensors"><i class="ft-radio"></i><span class="menu-title" data-i18n="">Sensors</span></a></li>
-    <li class="nav-item"><a href="/MeasurementHistory"><i class="ft-bar-chart"></i><span class="menu-title" data-i18n="">Measurement</span></a></li>
-    <li class="nav-item"><a href="/History"><i class="ft-book"></i><span class="menu-title" data-i18n="">Plant History</span></a></li>
-    <li class="nav-item"><a href="/AppliedFertilizer"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a></li>
-    <li class="nav-item"><a href="/Reports"><i class="ft-layout"></i><span class="menu-title" data-i18n="">Over All Reports</span></a></li>
-  </ul>
-</div>
-
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class="nav-item"><a href="/dash"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a>
+                </li>
+                <li class="nav-item" id="charts-dropdown" style="position: relative;"><a href="/charts" style="display: block;"><i class="ft-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a>
+                </li>
+                <li class="nav-item"><a href="/tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a>
+                </li>
+                <!-- <li class="nav-item"><a href="/cards"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Drought Monitoring</span></a>
+                </li>
+                <li class="nav-item"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a> -->
+                <li class="nav-item"><a href="/sensors"><i class="ft-radio"></i><span class="menu-title" data-i18n="">Sensors</span></a>
+                </li>
+                <li class=" nav-item"><a href="/MeasurementHistory"><i class="ft-bar-chart"></i><span class="menu-title" data-i18n=""><span>Measurement</span></a>
+                </li>
+                </li>
+                <li class="nav-item"><a href="/History"><i class="ft-book"></i><span class="menu-title" data-i18n="">Plant History</span></a>
+                </li>
+                <li class="active"><a href="/AppliedFertilizer"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a>
+                </li>
+                <li class="nav-item"><a href="/Reports"><i class="ft-layout"></i><span class="menu-title" data-i18n="">Over All Reports</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation-background"></div>
     </div>
 
     <div class="app-content content">
@@ -177,22 +187,9 @@
                                                         <td><?php echo $application['time_span']; ?></td>
                                                         <td><?php echo $application['frequency_of_application']; ?></td>
                                                         <td>
-    <button 
-        onclick="openEditApplicationModal('<?php echo $application['id']; ?>', '<?php echo $application['plot_id']; ?>', '<?php echo $application['fertilizer_name']; ?>', '<?php echo $application['date_applied']; ?>', '<?php echo $application['time_span']; ?>', '<?php echo $application['frequency_of_application']; ?>')" 
-        style="background-color: #28a745; color: white; border: none; border-radius: 5px; padding: 8px 12px; font-size: 14px; cursor: pointer; transition: background-color 0.3s;" 
-        onmouseover="this.style.backgroundColor='#218838'" 
-        onmouseout="this.style.backgroundColor='#28a745'">
-        Edit
-    </button>
-    <button 
-        onclick="deleteApplication('<?php echo $application['id']; ?>')" 
-        style="background-color: #dc3545; color: white; border: none; border-radius: 5px; padding: 8px 12px; font-size: 14px; cursor: pointer; transition: background-color 0.3s;" 
-        onmouseover="this.style.backgroundColor='#c82333'" 
-        onmouseout="this.style.backgroundColor='#dc3545'">
-        Delete
-    </button>
-</td>
-
+                                                            <button onclick="openEditApplicationModal('<?php echo $application['id']; ?>', '<?php echo $application['plot_id']; ?>', '<?php echo $application['fertilizer_name']; ?>', '<?php echo $application['date_applied']; ?>', '<?php echo $application['time_span']; ?>', '<?php echo $application['frequency_of_application']; ?>')" class="btn btn-success">Edit</button>
+                                                            <button onclick="deleteApplication('<?php echo $application['id']; ?>')" class="btn btn-danger">Delete</button>
+                                                        </td>
                                                     </tr>
                                                 <?php endforeach; ?>
                                             <?php endif; ?>
