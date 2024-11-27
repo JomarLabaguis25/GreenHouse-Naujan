@@ -637,7 +637,7 @@
   </div>
   <!-- ////////////////////////////////////////////////////////////////////////////-->
 
-  
+
 
   <!-- BEGIN VENDOR JS-->
   <script src="<?= base_url('admin/theme-assets/vendors/js/vendors.min.js'); ?>" type="text/javascript"></script>
