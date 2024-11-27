@@ -49,7 +49,7 @@
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
                 <li class="nav-item"><a href="/dash"><i class="ft-home"></i><span class="menu-title">Dashboard</span></a></li>
                 <li class="nav-item"><a href="/charts"><i class="ft-pie-chart"></i><span class="menu-title">Charts</span></a></li>
-                <li class="active"><a href="/cards"><i class="ft-layers"></i><span class="menu-title">Drought Monitoring</span></a></li>
+                <li class="active"><a href="/cards"><i class="ft-layers"></i><span class="menu-title">DM</span></a></li>
                 <li class="nav-item"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title">PH Nutrients</span></a></li>
                 <li class="nav-item"><a href="/sensors"><i class="ft-droplet"></i><span class="menu-title">Sensors</span></a></li>
                 <li class="nav-item"><a href="/MeasurementHistory"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Measurement H</span></a>

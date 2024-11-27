@@ -119,6 +119,3 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
 });
 $routes->post('api/receive', 'ApiController::receiveData');
 $routes->post('api/liveMeasurement', 'ApiController::store');
-
-
-$routes->get('/dash/plot_nutrients_monitoring', 'PlotController::nut_mot');

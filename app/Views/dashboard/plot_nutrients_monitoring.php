@@ -108,31 +108,28 @@
         <div class="content-wrapper">
             <div class="content-wrapper-before"></div>
             <div class="content-header row">
-                
-            
+                <div class="content-header-left col-md-4 col-12 mb-2">
+                    <h3 class="content-header-title">NPK Monitoring for <?= $plot['plot_name']; ?></h3>
+                </div>
+                <div class="content-header-right col-md-8 col-12">
+                    <button onclick="goBack()" class="btn btn-primary float-md-right">Back</button>
+                </div>
+            </div>
             <div class="content-body">
-    <div class="row">
-        <div class="col-12">
-            <?php if (!empty($plots)): ?>
-                <?php foreach ($plots as $plot): ?>
-                    <div class="card text-center">
-                        <img class="img-fluid w-45 pt-3 mx-auto d-block" 
-                             src="<?= base_url($plot['image']); ?>" 
-                             alt="Plot image">
-                        <div class="card-body">
-                            <h4 class="card-title"><?= $plot['plot_name']; ?></h4>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card text-center ">
+                            <img class="img-fluid  w-45 pt-3 mx-auto d-block" src="<?= base_url($plot['image']); ?>" alt="Plot image">
+                            <div class="card-body">
+                                <h4 class="card-title"><?= $plot['plot_name']; ?></h4>
+                            </div>
                         </div>
-                    </div>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <p class="text-center">No plots available.</p>
-            <?php endif; ?>
-        </div>
-    </div>
-</div>
 
-               
-                <!-- <div class="row">
+                    </div>
+                </div>
+
+                <!-- Morning NPK Data -->
+                <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body text-center">
@@ -145,7 +142,7 @@
                     </div>
                 </div>
 
-               
+                <!-- Afternoon NPK Data -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -157,13 +154,117 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
             </div>
         </div>
     </div>
 
+    <script>
+        function goBack() {
+            window.history.back();
+        }
 
+        // Morning NPK Chart
+        var morningData = {
+            labels: <?= json_encode($morning_labels); ?>,
+            datasets: [{
+                label: "Nitrogen",
+                backgroundColor: "rgba(54, 162, 235, 0.2)",
+                borderColor: "rgba(54, 162, 235, 1)",
+                data: <?= json_encode($morning_nitrogen); ?>,
+                fill: true
+            }, {
+                label: "Phosphorus",
+                backgroundColor: "rgba(75, 192, 192, 0.2)",
+                borderColor: "rgba(75, 192, 192, 1)",
+                data: <?= json_encode($morning_phosphorus); ?>,
+                fill: true
+            }, {
+                label: "Potassium",
+                backgroundColor: "rgba(255, 206, 86, 0.2)",
+                borderColor: "rgba(255, 206, 86, 1)",
+                data: <?= json_encode($morning_potassium); ?>,
+                fill: true
+            }]
+        };
+
+        // Afternoon NPK Chart
+        var afternoonData = {
+            labels: <?= json_encode($afternoon_labels); ?>,
+            datasets: [{
+                label: "Nitrogen",
+                backgroundColor: "rgba(54, 162, 235, 0.2)",
+                borderColor: "rgba(54, 162, 235, 1)",
+                data: <?= json_encode($afternoon_nitrogen); ?>,
+                fill: true
+            }, {
+                label: "Phosphorus",
+                backgroundColor: "rgba(75, 192, 192, 0.2)",
+                borderColor: "rgba(75, 192, 192, 1)",
+                data: <?= json_encode($afternoon_phosphorus); ?>,
+                fill: true
+            }, {
+                label: "Potassium",
+                backgroundColor: "rgba(255, 206, 86, 0.2)",
+                borderColor: "rgba(255, 206, 86, 1)",
+                data: <?= json_encode($afternoon_potassium); ?>,
+                fill: true
+            }]
+        };
+
+        // Morning Chart
+        var morningChartCtx = document.getElementById('morningChart').getContext('2d');
+        var morningChart = new Chart(morningChartCtx, {
+            type: 'line',
+            data: morningData,
+            options: {
+                responsive: true,
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Time'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'NPK Levels'
+                        }
+                    }]
+                }
+            }
+        });
+
+        // Afternoon Chart
+        var afternoonChartCtx = document.getElementById('afternoonChart').getContext('2d');
+        var afternoonChart = new Chart(afternoonChartCtx, {
+            type: 'line',
+            data: afternoonData,
+            options: {
+                responsive: true,
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Time'
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'NPK Levels'
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
 
 </body>
 

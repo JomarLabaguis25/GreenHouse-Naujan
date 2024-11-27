@@ -40,13 +40,4 @@ class PlotController extends BaseController
     {
         return view('Plots/GHPlot8'); 
     }
-
-    public function nut_mot()
-{
-    $PlotModel = new PlotModel(); // Ensure proper case for the class name
-    $plots = $PlotModel->findAll(); // This will return an empty array if no records are found
-
-    // Pass the plots to the view directly
-    return view('dashboard/plot_nutrients_monitoring', ['plots' => $plots]);
-}
 }

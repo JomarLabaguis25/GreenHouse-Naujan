@@ -211,6 +211,7 @@
                       <span class="user-name text-bold-700 ml-1"><?= $loggedInUser['fullName'] ?? 'Admin'; ?></span>
                     </span>
                   </a>
+
                   <a class="dropdown-item" href="<?= base_url('auth/logout') ?>"><i class="ft-power"></i> Logout</a>
                 </div>
               </div>
@@ -233,20 +234,30 @@
       </ul>
     </div>
     <div class="main-menu-content">
-  <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-    <li class="active"><a href="/dash"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a></li>
-    <li class="nav-item" id="charts-dropdown" style="position: relative;"><a href="/charts" style="display: block;"><i class="ft-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a></li>
-    <li class="nav-item"><a href="/tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a></li>
-    <!-- <li class="nav-item" style="display: flex; align-items: center; justify-content: space-between;"><a href="/cards" style="display: block; width: 100%;"><i class="ft-layers"></i><span class="menu-title" data-i18n="">DroughtMonitoring</span></a></li>
-    <li class="nav-item"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a></li> -->
-    <li class="nav-item"><a href="/sensors"><i class="ft-radio"></i><span class="menu-title" data-i18n="">Sensors</span></a></li>
-    <li class="nav-item"><a href="/MeasurementHistory"><i class="ft-bar-chart"></i><span class="menu-title" data-i18n="">Measurement</span></a></li>
-    <li class="nav-item"><a href="/History"><i class="ft-book"></i><span class="menu-title" data-i18n="">Plant History</span></a></li>
-    <li class="nav-item"><a href="/AppliedFertilizer"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a></li>
-    <li class="nav-item"><a href="/Reports"><i class="ft-layout"></i><span class="menu-title" data-i18n="">Over All Reports</span></a></li>
-  </ul>
-</div>
-
+      <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+        <li class="active"><a href="/dash"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a>
+        </li>
+        <li class="nav-item" id="charts-dropdown" style="position: relative;"><a href="/charts" style="display: block;"><i class="ft-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a>
+        </li>
+        <li class="nav-item"><a href="/tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a>
+        </li>
+        <li class="nav-item"><a href="/cards"><i class="ft-layers"></i><span class="menu-title" data-i18n="">DM</span></a>
+        </li>
+        <li class="nav-item"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a>
+        <li class="nav-item"><a href="/sensors"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Sensors</span></a>
+        </li>
+        <li class=" nav-item"><a href="/MeasurementHistory"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Measurement H</span></a>
+        </li>
+        </li>
+        </li>
+        <li class="nav-item"><a href="/History"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Plant History</span></a>
+        </li>
+        <li class="nav-item"><a href="/AppliedFertilizer"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a>
+        </li>
+        <li class="nav-item"><a href="/Reports"><i class="ft-layout"></i><span class="menu-title" data-i18n="">Over All Reports</span></a>
+        </li>
+      </ul>
+    </div>
     <div class="navigation-background"></div>
   </div>
 
@@ -273,29 +284,28 @@
         </div>
 
         <!-- Weather Information -->
-<div class="row match-height">
-  <div class="col-xl-12 col-lg-12">
-    <div class="card weather-card" style="display: flex; align-items: center; justify-content: center; height: 80%; text-align: center;">
-      <div class="card-content">
-        <div class="card-body" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-          <div class="weather-icon" style="font-size: 48px; margin-bottom: 20px;">
-            <i class="fas fa-cloud-sun"></i>
-          </div>
-          <div>
-            <h4 id="weather-location">Naujan, Oriental Mindoro</h4>
-            <div id="weather-info" style="margin-top: 10px;">
-              <p>Temperature: <span id="weather-temp">--°C</span></p>
-              <p>Humidity: <span id="weather-humidity">--%</span></p>
-              <p>Wind Speed: <span id="weather-wind">-- km/h</span></p>
-              <p>Condition: <span id="weather-condition">--</span></p>
+        <div class="row match-height">
+          <div class="col-xl-12 col-lg-12">
+            <div class="card weather-card">
+              <div class="card-content">
+                <div class="card-body">
+                  <div class="weather-icon text-center">
+                    <i class="fas fa-cloud-sun"></i>
+                  </div>
+                  <div class="text-center">
+                    <h4 id="weather-location">Naujan, Oriental Mindoro</h4>
+                    <div id="weather-info">
+                      <p>Temperature: <span id="weather-temp">--°C</span></p>
+                      <p>Humidity: <span id="weather-humidity">--%</span></p>
+                      <p>Wind Speed: <span id="weather-wind">-- km/h</span></p>
+                      <p>Condition: <span id="weather-condition">--</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 
         <!-- Key Metrics and Summaries -->
         <div class="row match-height">

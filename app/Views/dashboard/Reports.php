@@ -65,13 +65,13 @@
         <li class="nav-item"><a href="/dash"><i class="ft-home"></i><span class="menu-title">Dashboard</span></a></li>
         <li class="nav-item"><a href="/charts"><i class="ft-pie-chart"></i><span class="menu-title">Charts</span></a></li>
         <li class="nav-item"><a href="/tables"><i class="ft-credit-card"></i><span class="menu-title">Tables</span></a></li>
-        <!-- <li class="nav-item"><a href="/cards"><i class="ft-layers"></i><span class="menu-title">Drought Monitoring</span></a></li>
-        <li class="nav-item"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title">PH Nutrients</span></a></li> -->
-        <li class="nav-item"><a href="/sensors"><i class="ft-radio"></i><span class="menu-title">Sensors</span></a></li>
-        <li class=" nav-item"><a href="/MeasurementHistory"><i class="ft-bar-chart"></i><span class="menu-title" data-i18n="">Measurement</span></a>
+        <li class="nav-item"><a href="/cards"><i class="ft-layers"></i><span class="menu-title">DM</span></a></li>
+        <li class="nav-item"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title">PH Nutrients</span></a></li>
+        <li class="nav-item"><a href="/sensors"><i class="ft-droplet"></i><span class="menu-title">Sensors</span></a></li>
+        <li class=" nav-item"><a href="/MeasurementHistory"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Measurement H</span></a>
         </li>
-        <li class="nav-item"><a href="/History"><i class="ft-book"></i><span class="menu-title">Plant History</span></a></li>
-        <li class="nav-item"><a href="/AppliedFertilizer"><i class="ft-droplet"></i><span class="menu-title">Applied Fertilizer</span></a></li>
+        <li class="nav-item"><a href="/History"><i class="ft-bold"></i><span class="menu-title">Plant History</span></a></li>
+        <li class="nav-item"><a href="/AppliedFertilizer"><i class="ft-bold"></i><span class="menu-title">Applied Fertilizer</span></a></li>
         <li class="active"><a href="/Reports"><i class="ft-layout"></i><span class="menu-title">Overall Reports</span></a></li>
       </ul>
     </div>
