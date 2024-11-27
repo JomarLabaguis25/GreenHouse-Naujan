@@ -46,19 +46,19 @@
             </ul>
         </div>
         <div class="main-menu-content">
-            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class="nav-item"><a href="/dash"><i class="ft-home"></i><span class="menu-title">Dashboard</span></a></li>
-                <li class="nav-item"><a href="/charts"><i class="ft-pie-chart"></i><span class="menu-title">Charts</span></a></li>
-                <li class="active"><a href="/cards"><i class="ft-layers"></i><span class="menu-title">Drought Monitoring</span></a></li>
-                <li class="nav-item"><a href="/nutrients"><i class="ft-box"></i><span class="menu-title">PH Nutrients</span></a></li>
-                <li class="nav-item"><a href="/sensors"><i class="ft-droplet"></i><span class="menu-title">Sensors</span></a></li>
-                <li class="nav-item"><a href="/MeasurementHistory"><i class="ft-bold"></i><span class="menu-title" data-i18n="">Measurement H</span></a>
-                </li>
-                <li class="nav-item"><a href="/History"><i class="ft-bold"></i><span class="menu-title">Plant History</span></a></li>
-                <li class="nav-item"><a href="/AppliedFertilizer"><i class="ft-bold"></i><span class="menu-title">Applied Fertilizer</span></a></li>
-                <li class="nav-item"><a href="/Reports"><i class="ft-layout"></i><span class="menu-title">Overall Reports</span></a></li>
-            </ul>
-        </div>
+  <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+    <li class="active"><a href="/dash"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span></a></li>
+    <li class="nav-item" id="charts-dropdown" style="position: relative;"><a href="/charts" style="display: block;"><i class="ft-pie-chart"></i><span class="menu-title" data-i18n="">Charts</span></a></li>
+    <li class="nav-item"><a href="/tables"><i class="ft-credit-card"></i><span class="menu-title" data-i18n="">Tables</span></a></li>
+    <li class="nav-item" style="display: flex; align-items: center; justify-content: space-between;"><a href="/cards" style="display: block; width: 100%;"><i class="ft-cloud-drizzle"></i><span class="menu-title" data-i18n="">DM</span></a></li>
+    <li class="nav-item"><a href="/nutrients"><i class="fa fa-leaf"></i><span class="menu-title" data-i18n="">PH Nutrients</span></a></li>
+    <li class="nav-item"><a href="/sensors"><i class="ft-radio"></i><span class="menu-title" data-i18n="">Sensors</span></a></li>
+    <li class="nav-item"><a href="/MeasurementHistory"><i class="ft-bar-chart"></i><span class="menu-title" data-i18n="">Measurement</span></a></li>
+    <li class="nav-item"><a href="/History"><i class="ft-book"></i><span class="menu-title" data-i18n="">Plant History</span></a></li>
+    <li class="nav-item"><a href="/AppliedFertilizer"><i class="ft-droplet"></i><span class="menu-title" data-i18n="">Applied Fertilizer</span></a></li>
+    <li class="nav-item"><a href="/Reports"><i class="ft-layout"></i><span class="menu-title" data-i18n="">Over All Reports</span></a></li>
+  </ul>
+</div>
     </div>
 
     <div class="app-content content">
