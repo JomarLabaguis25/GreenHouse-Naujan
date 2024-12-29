@@ -12,6 +12,7 @@ use App\Models\PlantFertilizerModel;
 use App\Models\OrganicModel;
 use App\Models\ChemicalModel;
 use App\Controllers\BaseController;
+use App\Models\AdminPhone;
 use App\Models\EnvironmentalMeasurementModel;
 use App\Models\FertilizerApplicationModel;
 use App\Models\FertilizerModel;
@@ -25,6 +26,11 @@ use DateTimeZone;
 
 class AdminController extends BaseController
 {
+    public $phoneModel;
+    public function __construct()
+    {
+        $this->phoneModel = new AdminPhone();
+    }
     use ResponseTrait;
     public function login()
     {
@@ -61,6 +67,7 @@ class AdminController extends BaseController
         $harvestedPlantModel = new HarvestedPlantModel();
         $fertilizerApplicationModel = new FertilizerApplicationModel();
         $plantModel = new PlantModel();
+        $phoneModel = new AdminPhone();
 
         // Fetch data
         $data['provinceInfo'] = $infoModel->findAll();
@@ -219,6 +226,8 @@ class AdminController extends BaseController
         $data['lastMonthAveragePotassium'] = $this->calculateAverage($lastMonthMeasurements, 'potassium_level');
         $data['yesterdayAveragePotassium'] = $this->calculateAverage($yesterdayMeasurements, 'potassium_level');
 
+        $data['phone'] = $phoneModel->findAll();
+
         return view('dashboard/dash', $data);
     }
 
@@ -236,7 +245,70 @@ class AdminController extends BaseController
     }
 
 
+    public function add()
+    {
+        $name = $this->request->getPost('name');
+        $phoneNumber = $this->request->getPost('phone_number');
 
+        // Insert into database
+        $data = [
+            'name' => $name,
+            'phone_number' => $phoneNumber,
+            'receive_message' => 0, // Default to not receiving messages
+        ];
+
+        $id = $this->phoneModel->insert($data);
+
+        if ($id) {
+            return $this->response->setJSON(['success' => true, 'id' => $id]);
+        } else {
+            return $this->response->setJSON(['success' => false, 'message' => 'Failed to add phone number']);
+        }
+    }
+
+    // Toggle the 'receive_message' status
+    public function toggleReceive()
+    {
+        $id = (int) $this->request->getVar('id'); // Properly cast to integer
+        $receiveMessage = (int) $this->request->getVar('receive_message'); // Properly cast to integer
+
+        // Debug the input
+        var_dump($receiveMessage); // Check if it's an integer
+        var_dump($id); // Check if it's an integer
+
+        // Validate input
+        if (!is_numeric($id) || !in_array($receiveMessage, [0, 1], true)) { // Compare integers, not strings
+            return $this->response->setStatusCode(400)->setJSON(['success' => false, 'message' => 'Invalid input data']);
+        }
+
+        // Attempt to update
+        try {
+            $update = $this->phoneModel->update($id, ['receive_message' => $receiveMessage]);
+            if (!$update) {
+                throw new \RuntimeException('Failed to update record in the database');
+            }
+            return $this->response->setJSON(['success' => true]);
+        } catch (\Exception $e) {
+            log_message('error', $e->getMessage()); // Log the error
+            return $this->response->setStatusCode(500)->setJSON(['success' => false, 'message' => 'An error occurred while updating']);
+        }
+    }
+
+
+
+    // Delete a phone number
+    public function delete()
+    {
+        $id = $this->request->getPost('id');
+
+        $delete = $this->phoneModel->delete($id);
+
+        if ($delete) {
+            return $this->response->setJSON(['success' => true]);
+        } else {
+            return $this->response->setJSON(['success' => false, 'message' => 'Failed to delete phone number']);
+        }
+    }
 
 
 

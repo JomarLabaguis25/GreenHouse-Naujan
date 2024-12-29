@@ -105,7 +105,7 @@
         <div class="card p-1">
           <div class="card-header d-flex justify-content-between align-items-center" style="padding: 2px 5px;">
             <h4 class="card-title">Plant Summary</h4>
-            <button id="download-plant-summary" class="btn btn-primary">Download as Excel</button>
+            <button id="download-plant-summary" class="btn btn-primary">Generate Report</button>
           </div>
 
 
@@ -154,7 +154,7 @@
         <div class="card p-1">
           <div class="card-header d-flex justify-content-between align-items-center" style="padding: 2px 5px;">
             <h4 class="card-title">Daily Planting Summary</h4>
-            <button id="download-planting-summary" class="btn btn-primary">Download as Excel</button>
+            <button id="download-planting-summary" class="btn btn-primary">Generate Reports</button>
           </div>
           <div class="card-content collapse show">
             <div class="card-body"></div>
@@ -197,7 +197,7 @@
         <div class="card p-1">
           <div class="card-header d-flex justify-content-between align-items-center" style="padding: 2px 5px;">
             <h4 class="card-title">Daily Harvesting Summary</h4>
-            <button id="download-harvesting-summary" class="btn btn-primary">Download as Excel</button>
+            <button id="download-harvesting-summary" class="btn btn-primary">Generate Reports</button>
           </div>
           <div class="card-content collapse show">
             <div class="card-body"></div>
@@ -240,7 +240,7 @@
         <div class="card p-1">
           <div class="card-header d-flex justify-content-between align-items-center" style="padding: 2px 5px;">
             <h4 class="card-title">Fertilizer Applications</h4>
-            <button id="download-fertilizer-applications" class="btn btn-primary">Download as Excel</button>
+            <button id="download-fertilizer-applications" class="btn btn-primary">Generate Reports</button>
           </div>
           <div class="card-content collapse show">
             <div class="card-body"></div>
@@ -285,7 +285,7 @@
         <div class="card p-1">
           <div class="card-header d-flex justify-content-between align-items-center" style="padding: 2px 5px;">
             <h4 class="card-title">Environmental Measurements</h4>
-            <button id="download-environmental-measurements" class="btn btn-primary">Download as Excel</button>
+            <button id="download-environmental-measurements" class="btn btn-primary">Generate Reports</button>
           </div>
           <div class="card-content collapse show">
             <div class="card-body"></div>
@@ -319,6 +319,14 @@
             </div>
           </div>
         </div>
+        <!-- PDF Preview Modal -->
+        <div id="pdf-preview-modal" style="display: none; position: fixed; top: 10%; left: 15%; width: 70%; height: 80%; background-color: white; border: 1px solid #ccc; z-index: 1000; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+          <iframe id="pdf-preview-content" style="width: 100%; height: 90%; border: none;"></iframe>
+          <div style="padding: 10px; text-align: right;">
+            <button id="download-pdf-file" class="btn btn-primary">Download PDF</button>
+            <button onclick="document.getElementById('pdf-preview-modal').style.display='none';" class="btn btn-secondary">Close</button>
+          </div>
+        </div>
 
         <!-- Chart for Environmental Measurements -->
         <div class="chart-container">
@@ -329,7 +337,16 @@
     </div>
   </div>
 
- 
+  <!-- Modal for Excel Preview -->
+  <div id="excel-preview-modal" style="display:none; position:fixed; top:10%; left:10%; width:80%; height:80%; background:#fff; z-index:1000; border: 1px solid #ccc; overflow:auto;">
+    <div style="padding: 10px;">
+      <h4>Excel File Preview</h4>
+      <div id="excel-preview-content"></div>
+      <button id="download-excel-file" class="btn btn-primary">Download</button>
+      <button id="close-preview-modal" class="btn btn-secondary">Close</button>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 
   <!-- Vendor JS -->
@@ -340,6 +357,9 @@
   <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+
   <!-- Custom JS -->
   <script>
     $(document).ready(function() {
@@ -508,40 +528,83 @@
         }
       });
 
-      // Download as Excel functionality
-      $('#download-plant-summary').on('click', function() {
-        downloadTableAsExcel('plant-summary-table', 'Plant_Summary.xlsx');
-      });
+      async function previewTableAsPDF(tableId) {
 
-      $('#download-planting-summary').on('click', function() {
-        downloadTableAsExcel('planting-summary-table', 'Daily_Planting_Summary.xlsx');
-      });
+        if (!window.jspdf || !window.jspdf.jsPDF) {
+          console.error("jsPDF library not loaded correctly.");
+          return;
+        }
 
-      $('#download-harvesting-summary').on('click', function() {
-        downloadTableAsExcel('harvesting-summary-table', 'Daily_Harvesting_Summary.xlsx');
-      });
-
-      $('#download-fertilizer-applications').on('click', function() {
-        downloadTableAsExcel('fertilizer-applications-table', 'Fertilizer_Applications.xlsx');
-      });
-
-      $('#download-environmental-measurements').on('click', function() {
-        downloadTableAsExcel('environmental-measurements-table', 'Environmental_Measurements.xlsx');
-      });
-
-
-      function downloadTableAsExcel(tableId, filename) {
         // Get the table element
         let table = document.getElementById(tableId);
+        if (!table) {
+          console.error("Table not found with ID:", tableId);
+          return;
+        }
 
-        // Convert the table to a worksheet
-        let workbook = XLSX.utils.table_to_book(table, {
-          sheet: "Sheet 1"
+        // Extract table data into PDF content
+        const {
+          jsPDF
+        } = window.jspdf;
+        let pdf = new jsPDF();
+
+        // Add table data to the PDF
+        pdf.autoTable({
+          html: `#${tableId}`,
+          startY: 10,
+          styles: {
+            fontSize: 10,
+            cellPadding: 3
+          }
         });
 
-        // Write the workbook and download it as an Excel file
-        XLSX.writeFile(workbook, filename);
+        // Convert PDF to Blob for preview
+        let pdfBlob = pdf.output("blob");
+        let pdfUrl = URL.createObjectURL(pdfBlob);
+
+        // Inject the PDF preview into an iframe
+        let previewIframe = document.getElementById("pdf-preview-content");
+        if (!previewIframe) {
+          console.error("Preview iframe not found.");
+          return;
+        }
+        previewIframe.src = pdfUrl;
+
+        // Display the modal
+        document.getElementById('pdf-preview-modal').style.display = 'block';
+
+        // Attach download functionality
+        document.getElementById('download-pdf-file').onclick = function() {
+          pdf.save(tableId + ".pdf");
+        };
       }
+
+
+      // Close Preview Modal
+      document.getElementById('close-preview-modal').onclick = function() {
+        document.getElementById('excel-preview-modal').style.display = 'none';
+      };
+
+      // Attach preview functionality to buttons
+      document.getElementById('download-plant-summary').onclick = function() {
+        previewTableAsPDF('plant-summary-table');
+      };
+
+      document.getElementById('download-planting-summary').onclick = function() {
+        previewTableAsPDF('planting-summary-table');
+      };
+
+      document.getElementById('download-harvesting-summary').onclick = function() {
+        previewTableAsPDF('harvesting-summary-table');
+      };
+
+      document.getElementById('download-fertilizer-applications').onclick = function() {
+        previewTableAsPDF('fertilizer-applications-table');
+      };
+
+      document.getElementById('download-environmental-measurements').onclick = function() {
+        previewTableAsPDF('environmental-measurements-table');
+      };
 
     });
   </script>

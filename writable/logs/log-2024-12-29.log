@@ -1,0 +1,34 @@
+ERROR - 2024-12-29 12:25:47 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 12:25:48 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 12:36:25 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 12:36:26 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 12:42:15 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 12:42:15 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 12:42:35 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 12:42:36 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 12:45:01 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 12:45:02 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 12:59:58 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 12:59:58 --> Failed to send SMS to number 09567009902, response was not successful
+CRITICAL - 2024-12-29 12:59:58 --> "sendings" is an invalid log level.
+in SYSTEMPATH\Log\Logger.php on line 258.
+ 1 SYSTEMPATH\Log\Logger.php(258): CodeIgniter\Log\Exceptions\LogException::forInvalidLogLevel('sendings')
+ 2 SYSTEMPATH\Common.php(810): CodeIgniter\Log\Logger->log('sendings', 'success', [])
+ 3 APPPATH\Controllers\ApiController.php(57): log_message('sendings', 'success')
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ApiController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(86): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\GreenHouse-Naujan\\public\\index.php')
+ERROR - 2024-12-29 13:00:19 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 13:00:20 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 13:00:23 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 13:00:24 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 13:02:38 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 13:02:39 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 13:04:57 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 13:04:57 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 13:06:47 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 13:06:48 --> Failed to send SMS to number 09567009902, response was not successful
+ERROR - 2024-12-29 13:07:01 --> Failed to send SMS to number 09456005143, response was not successful
+ERROR - 2024-12-29 13:07:02 --> Failed to send SMS to number 09567009902, response was not successful

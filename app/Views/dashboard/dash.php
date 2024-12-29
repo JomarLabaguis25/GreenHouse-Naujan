@@ -211,7 +211,9 @@
                       <span class="user-name text-bold-700 ml-1"><?= $loggedInUser['fullName'] ?? 'Admin'; ?></span>
                     </span>
                   </a>
-
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#managePhoneNumbersModal">
+                    <i class="ft-phone"></i> Manage Phone Numbers
+                  </a>
                   <a class="dropdown-item" href="<?= base_url('auth/logout') ?>"><i class="ft-power"></i> Logout</a>
                 </div>
               </div>
@@ -221,6 +223,67 @@
       </div>
     </div>
   </nav>
+  <!-- Manage Phone Numbers Modal -->
+  <div class="modal fade" id="managePhoneNumbersModal" tabindex="-1" role="dialog" aria-labelledby="managePhoneNumbersModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="managePhoneNumbersModalLabel">Manage Phone Numbers</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Add New Phone Number Form -->
+          <form id="addPhoneNumberForm" class="mb-3">
+            <div class="form-row">
+              <div class="col-md-5">
+                <input type="text" class="form-control" id="phoneName" placeholder="Name" required>
+              </div>
+              <div class="col-md-5">
+                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
+              </div>
+              <div class="col-md-2">
+                <button type="submit" class="btn btn-primary btn-block">Add</button>
+              </div>
+            </div>
+          </form>
+
+          <!-- Phone Numbers Table -->
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Phone Number</th>
+                  <th>Receive Messages</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="phoneNumbersTable">
+                <?php foreach ($phone as $p): ?>
+                  <tr data-id="<?= $p['id']; ?>">
+                    <td><?= $p['id']; ?></td>
+                    <td><?= $p['name']; ?></td>
+                    <td><?= $p['phone_number']; ?></td>
+                    <td>
+                      <input type="checkbox" class="toggle-receive" <?= $p['receive_message'] ? 'checked' : ''; ?>>
+                    </td>
+                    <td>
+                      <button class="btn btn-danger btn-sm delete-phone" data-id="<?= $p['id']; ?>">
+                        <i class="ft-trash"></i> Delete
+                      </button>
+                    </td>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- ////////////////////////////////////////////////////////////////////////////-->
 
@@ -654,6 +717,70 @@ text/javascript"></script>
   <!-- BEGIN PAGE LEVEL JS-->
   <script src="<?= base_url('admin/theme-assets/js/scripts/pages/dashboard-lite.js'); ?>" type="text/javascript"></script>
   <!-- END PAGE LEVEL JS-->
+  <script>
+    $(document).ready(function() {
+      // Handle Add Phone Number Form Submission
+      $('#addPhoneNumberForm').on('submit', function(e) {
+        e.preventDefault();
+        const name = $('#phoneName').val();
+        const phone = $('#phoneNumber').val();
+        $.ajax({
+          url: '<?= base_url('phone/add') ?>',
+          method: 'POST',
+          data: {
+            name,
+            phone_number: phone
+          },
+          success: function(response) {
+            // Refresh the table or append the new row
+            $('#phoneNumbersTable').append(`
+            <tr data-id="${response.id}">
+              <td>${response.id}</td>
+              <td>${name}</td>
+              <td>${phone}</td>
+              <td><input type="checkbox" class="toggle-receive"></td>
+              <td><button class="btn btn-danger btn-sm delete-phone" data-id="${response.id}"><i class="ft-trash"></i> Delete</button></td>
+            </tr>
+          `);
+            $('#phoneName').val('');
+            $('#phoneNumber').val('');
+          }
+        });
+      });
+
+      // Handle Toggle Receive Message
+      $('#phoneNumbersTable').on('change', '.toggle-receive', function() {
+        const id = $(this).closest('tr').data('id');
+        const receive = $(this).is(':checked') ? 1 : 0;
+        $.ajax({
+          url: '<?= base_url('phone/toggle_receive') ?>',
+          method: 'POST',
+          data: {
+            id,
+            receive_message: receive
+          }
+        });
+      });
+
+      // Handle Delete Phone Number
+      $('#phoneNumbersTable').on('click', '.delete-phone', function() {
+        const id = $(this).data('id');
+        if (confirm('Are you sure you want to delete this phone number?')) {
+          $.ajax({
+            url: '<?= base_url('phone/delete') ?>',
+            method: 'POST',
+            data: {
+              id
+            },
+            success: function() {
+              $(`#phoneNumbersTable tr[data-id="${id}"]`).remove();
+            }
+          });
+        }
+      });
+    });
+  </script>
+
   <script>
     // Script to handle plot selection and update the data dynamically
     const measurements = <?= json_encode($groupedMeasurements); ?>;

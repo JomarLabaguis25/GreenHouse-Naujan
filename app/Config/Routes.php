@@ -38,10 +38,15 @@ $routes->group('', ['filter' => 'auth'], function ($routes) {
     $routes->post('plants/fetchScientificName', 'AdminController::fetchScientificName');
 
 
+    $routes->post('phone/add', 'AdminController::add');
+    $routes->post('phone/toggle_receive', 'AdminController::toggleReceive');
+    $routes->post('phone/delete', 'AdminController::delete');
 
 
 
     // admin side
+    $routes->get('sms/broadcast/(:any)', 'ApiController::sendBroadcastSMS/$1');
+
     $routes->get('dash', 'AdminController::dash');
     $routes->get('charts', 'AdminController::charts');
     $routes->get('tables', 'AdminController::tables');
